@@ -1,0 +1,91 @@
+.section--programm {
+  text-align: center;
+  color: $color-white;
+  background-color: $color-black;
+  margin-top: -1rem;
+
+  .section-layer {padding-top: 3.8rem;padding-bottom: 6rem;
+    @media (max-width: $mobile){
+      padding-bottom: 4.6rem;padding-top:1rem;
+    }
+  }
+
+  .box-content {
+    .btn{margin-top: 4.6rem;
+      @media (max-width: $mobile){margin-top: 2.6rem;}
+    }
+
+    &__title {color: $color-white;
+      padding: 0 0 6rem 0;margin: 0;
+      @media (max-width: $mobile){
+        padding:  2.6rem 0;text-align: left;
+      }
+    }
+
+    .box-info {
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-evenly;
+      text-align: left;
+      @media (max-width: $mobile){
+        display: block;
+        justify-content: left;
+      }
+
+      .slide{
+        width: 23%;
+        @media (max-width: $mobile){
+          display: flex;
+          width: 100%;
+          padding-bottom: 1rem;
+        }
+        &__img {
+          width: 100%;
+          @media (max-width: $mobile){
+            width: 5.4rem;
+          }
+          img{
+            width: 7.4rem;
+
+            @media (max-width: $mobile){
+              width: 5.4rem
+            }
+          }
+        }
+
+        &__title {
+          font-family: $font2;
+          font-size: 2.8rem;
+          line-height: 3.6rem;
+          font-weight: 700;
+          padding-top: 1.2rem;
+          padding-bottom: 1.2rem;
+          width: 90%;
+          @media (max-width: $mobile){
+            font-weight: 700;
+            font-size: 2.2rem;
+            line-height: 2.4rem;
+          }
+        }
+
+        &__text {
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          @media (max-width: $mobile){
+            text-align: left;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+          }
+        }
+        .text-wrapper{
+          @media (max-width: $mobile) {
+            padding-left: 1rem;
+
+          }
+        }
+      }
+    }
+  }
+}

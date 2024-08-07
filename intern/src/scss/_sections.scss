@@ -1,0 +1,210 @@
+////// Both sections ///////
+.section-layer {
+  @extend .container;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8rem;
+  padding-top: 7rem;
+  @media (max-width: 600px) {
+    padding: 3.6rem 1.8rem;
+  }
+}
+
+.box-content {
+  max-width: 100%; //flex:54rem 1 0;
+  &__subtitle {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    display: block;
+    text-align: center;
+  }
+  p {
+    font-size: 2.2rem;
+    line-height: 1.37;
+    margin-bottom: 1.8rem;
+    &:last-of-type {
+      margin-bottom: 3.6rem;
+    }
+  }
+  li {
+    font-size: 2.2rem;
+    line-height: 1.37;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 100%;
+    .btn {
+      box-sizing: border-box;
+      display: inline-block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 1.8rem;
+      min-width: 17.2rem;
+      padding: 1.2rem 3.5rem;
+      text-align: center;
+    }
+    .box-content__title,
+    .box-content__text,
+    & {
+      p,
+      li {
+        font-size: 1.9rem;
+        line-height: 1.37;
+        &:last-of-type {
+          margin-bottom: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+.box-pic {
+  display: flex;
+  align-items: center;
+  flex: 100% 1 1;
+  justify-content: space-between;
+}
+
+//////// Люди
+.people {
+  position: relative;
+  pointer-events: none;
+  &__pic {
+    img {
+      max-width: 30rem;
+    }
+  }
+  &__txt {
+    position: absolute;
+    top: 35%;
+    opacity: 0;
+    transform: scale(0.7);
+    transition-delay: 3s;
+    transition: 1s ease-in-out;
+    span {
+      position: relative;
+      display: block;
+      min-width: 28rem;
+      padding: 2.8rem 3rem;
+      border-radius: 2rem;
+      font-size: 2.2rem;
+      line-height: 1.27;
+      white-space: normal;
+      text-align: center;
+      @media (max-width: 600px) {
+        text-align: left;
+      }
+      $bg: #efefef;
+      background: $bg;
+      color: $color-dark;
+      &:before {
+        @extend %ab;
+        bottom: -3rem;
+        left: 1rem;
+        z-index: -1;
+        border: 2rem solid #0000;
+        border-right: 1rem solid $bg;
+        border-top: 4rem solid $bg;
+        transform: rotate(-68deg);
+      }
+    }
+  }
+
+  &.animated {
+    //on wow started
+    .people__txt {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .pic-layer--girl & {
+    &__txt {
+      left: 120%;
+      top: 20%;
+    }
+  }
+  .pic-layer--boy & {
+    &__txt {
+      right: 120%;
+      top: 50%;
+      transition-delay: 1s;
+      span:before {
+        transform: rotate(-290deg) scale(-1, 1);
+        right: 1rem;
+        left: auto;
+      }
+
+      &--revers {
+        @media (max-width: 600px) {
+          span {
+            &:before {
+            }
+          }
+        }
+      }
+    }
+    //before{transform: rotate(-290deg) scale(-1, 1);right:1rem;left: auto;}
+  }
+  @media (max-width: 600px) {
+    .people__txt {
+      span {
+        padding: 1.2rem 1.5rem;
+        font-size: 1.9rem;
+        border-radius: 1.2rem;
+        min-width: auto;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+//// Пагинация слайдера
+.swiper-pagination {
+  text-align: center;
+  &-bullet {
+    display: inline-block;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    margin: 1rem 1.2rem;
+    background: #fff;
+    border: 1px solid #1f2229;
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+    @media (max-width: 600px) {
+      margin: 0.8rem;
+    }
+    &-active {
+      border-color: #be88f8;
+      background-color: #be88f8;
+    }
+  }
+}
+
+/////////////end Both sections/////
+
+@import "sections/header";
+@import "sections/teaser";
+
+// @import "sections/section-about";
+// @import "sections/section-frame";
+// @import "sections/section-steps";
+
+// @import "sections/section--stages";
+
+// @import "sections/section-program";
+// @import "sections/section--what-next";
+// @import "sections/section--specialization";
+// @import "sections/section--faq";
+// @import "sections/section--footer";
+// @import "sections/section--reviews";
+
+// //dialogs
+// @import "sections/section-join";
+// @import "sections/section--what-next-dialog";
+// @import "sections/section--how-learn-dialog";
+// @import "sections/section--specialization-dialog";
+// @import "sections/section--stages-dialog";

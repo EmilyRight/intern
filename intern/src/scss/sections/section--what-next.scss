@@ -1,0 +1,88 @@
+// .section--what-next {
+//   margin-top: -13rem;
+//   @media (max-width: $mobile) {
+//     margin-top: -3rem;
+//   }
+//   color: $color-white;
+//   background-color: $color-black;
+
+//   h2 {
+//     color: $color-white;
+//   }
+//   text-align: center;
+//   .section-layer {
+//     padding-top: 0;
+//     padding-bottom: 0;
+//   }
+//   .btn {
+//     @media (max-width: $mobile) {
+//       margin-top: 3.6rem;
+//       margin-bottom: 6.4rem;
+//     }
+//   }
+//   .box-content {
+//     &--title {
+//       // TODO: сделать нормально
+//       width: 80%;
+//       margin: 0 auto;
+//       padding-bottom: 4.6rem;
+//       @media (max-width: $mobile) {
+//         width: 100%;
+//         margin: 0;
+//         text-align: left;
+//         padding-bottom: 3.6rem;
+//       }
+//     }
+//   }
+//   @import "../plugins/swiper/swiper";
+//   .what-next__slider {
+//     .swiper-pagination_next {
+//       margin-top: 1.8rem;
+
+//       .swiper-pagination-bullet {
+//         margin: 0 0.4rem;
+//         background: $color-black;
+//         border: 1px solid $color-white;
+
+//         &-active {
+//           background: $color-violet;
+//           border: none;
+//         }
+//       }
+//     }
+
+//     .swiper-slide {
+//       text-align: left;
+//       background-color: $color-white;
+//       color: $color-dark;
+//       border-radius: 1.2rem;
+
+//       padding: 3rem 2rem 2rem 2rem;
+//       width: auto;
+//       height: auto;
+//       @media (max-width: 600px) {
+//         padding: 2.4rem 1.8rem 1.8rem 1.8rem;
+//         width: 30rem;
+//       }
+
+//       .slide {
+//         @media (max-width: 600px) {
+//         }
+//         &__title {
+//           font-family: $font2;
+//           font-size: 2.8rem;
+//           line-height: 3.6rem;
+//           font-weight: bold;
+//           margin: 1.4rem 0 1.2rem 0;
+//         }
+
+//         &__text {
+//           font-size: 1.6rem;
+//           line-height: 2.2rem;
+//         }
+//       }
+//     }
+//   }
+//   .btn {
+//   }
+// }

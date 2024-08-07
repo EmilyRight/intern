@@ -1,0 +1,133 @@
+.header {
+  background-color: #fff;
+  position: relative;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+
+  @media (min-width: $mobile-small) {
+    background-color: #000;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+  }
+  &__nav {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 10;
+    background-color: #fff;
+    right: -1000%;
+    padding: 2.4rem;
+    @media (min-width: $mobile-small) {
+      background-color: #000;
+      color: #fff;
+      position: static;
+      width: auto;
+      min-height: auto;
+    }
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.4s;
+
+    &._opened {
+      right: 0;
+    }
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+
+      @media (min-width: $mobile-small) {
+        flex-direction: row;
+      }
+    }
+  }
+  
+  .menu {
+    &__item {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  .burger-icon {
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    z-index: 10;
+    font-size: 2px;
+    height: 3.2rem;
+    min-width: 5rem;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+    top: 1.5rem;
+    @media (min-width: $mobile-small) {
+      display: none;
+    }
+    &:hover {
+      transform: scale(0.9);
+    }
+    span {
+      transition-delay: 0.1s;
+      opacity: 1;
+      position: relative;
+      background: #191919;
+      width: 70%;
+      max-width: 1.8rem;
+      height: 0.2rem;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #191919;
+        height: 0.2rem;
+        width: 100%;
+        opacity: 1;
+        transition: 0.5s ease;
+      }
+      &:before {
+        top: 0.6rem;
+      }
+      &:after {
+        bottom: 0.6rem;
+      }
+    }
+
+    &._opened {
+      span {
+        transition-delay: 0.1s;
+        opacity: 1;
+        position: relative;
+        background-color: transparent;
+        width: 70%;
+        max-width: 1.8rem;
+        height: 0.2rem;
+
+        &:before {
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%) rotate(45deg);
+        }
+        &:after {
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%) rotate(-45deg);
+        }
+      }
+    }
+  }
+}

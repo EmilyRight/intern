@@ -1,0 +1,55 @@
+.section--faq{
+  .section-layer{z-index: 0;
+    @media (max-width: $mobile){padding-bottom: 5rem;}
+  }
+  color: $color-white;
+  h2{color: $color-white;}
+  background-color: $color-black;
+  .box-content{
+    &--title{
+      padding: 1.6rem 0 7.2rem;
+      margin: 0;
+      width: 90%;
+      @media (max-width: $mobile) {
+        width: 70%;
+        padding: 1rem 0 5.4rem;
+      }
+    }
+    .box-pic{
+
+      right: 6%;
+      .pic-layer-ask{
+        position: absolute;
+        right: 6%;
+        margin-top: -15rem;
+        @media (max-width: $mobile) {
+          width: 22%;
+          margin-top: -18rem;
+          right: 0%;
+          img{
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  .faq__item{
+    border-top: 1px solid $color-white;
+    &--title{
+      width: 95%;
+      @media (max-width: $mobile) {
+        width: 90%;
+      }
+    }
+    &--close{
+      &:before,&:after{
+        background-color: $color-white;
+      }
+    }
+    &:last-child{
+      border-bottom: 1px solid $color-white;
+    }
+  }
+}
+
+

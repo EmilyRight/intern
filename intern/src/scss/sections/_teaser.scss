@@ -1,0 +1,384 @@
+.teaser {
+  position: relative;
+  z-index: 5; //background-color:$color-dark;
+  &:before {
+    @extend %ab;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: block;
+  }
+  .platform_ios & {
+    @media (max-width: 600px) {
+      .video-layer {
+        background-color: #ddd;
+        background-image: url("../video/fallback-ios@2x.jpg");
+        background-size: 160%;
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        video {
+          opacity: 0;
+          transition: opacity 0.2s linear;
+          &.is_started {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .video-layer {
+    video {
+      position: relative;
+      margin: 0;
+      display: block;
+      object-fit: cover; //margin-top: -1%;margin-bottom: -1%;
+      min-height: 66vh;
+      max-height: 90vh;
+    }
+    @media (max-width: 600px) {
+      max-width: 100%;
+      video {
+        min-height: 37.5rem;
+      }
+    }
+  }
+
+  &-heading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    padding-top: 3.6rem;
+    transform: translateY(0);
+  }
+  .top-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    user-select: none;
+    top: 34%;
+    margin-bottom: -1px; //fix adjusted size
+    &__text {
+      color: #fff;
+      padding-bottom: 5.3rem;
+      text-shadow: 0 0 0.8em rgba(0, 0, 0, 0.4);
+      .bigtext {
+        font-family: $fontStencil;
+        text-transform: uppercase;
+        cursor: default;
+        width: 48rem;
+        max-width: 100%;
+        line-height: 1.28;
+        font-size: 6.8rem;
+      }
+      p {
+        font-size: 2.2rem;
+        display: block;
+        margin: 2.4rem 0 4.2rem;
+        cursor: default;
+      }
+      .teaser-more {
+        display: inline-block;
+        color: #fff;
+        font: bold 1.6rem $font1;
+        text-transform: uppercase;
+        background: none;
+        border: none;
+        padding: 0;
+        transition: 0.4s ease-in-out;
+        &:hover {
+          text-shadow: none;
+          transform: scale(1.05);
+        }
+      }
+      .btn--white {
+        border-color: #fff;
+        background: #fff;
+        box-shadow: 0 0 0.8em rgba(0, 0, 0, 0.2);
+        transition: 0.4s;
+        &:hover {
+          transform: translateY(-2px);
+        }
+        &:focus,
+        &:active {
+          transform: scale(0.96);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1156px) {
+    .teaser-heading {
+      padding-top: 1.5rem;
+      .logo img {
+        width: 5.8rem;
+      }
+    }
+  }
+  @media (max-width: 920px) {
+    .video-layer {
+      height: auto;
+      min-height: auto;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .teaser-heading {
+      padding: 0.9rem 0;
+      .top-line {
+        &__button {
+          display: none;
+        }
+      }
+    }
+    &:before,
+    &:after {
+      display: none;
+    }
+    .video-layer {
+      max-width: 100%;
+      min-height: 37.5rem;
+      height: 37.5rem;
+      video {
+        height: 100%;
+        object-fit: cover;
+      }
+      img {
+        right: 0;
+        width: 100%;
+        max-width: 100%;
+      }
+      // &:before{height:15rem;border-width: 26vw 0 0 101vw;}
+      position: relative;
+      &:before {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        content: "";
+        display: block;
+      }
+    }
+    .teaser-body {
+      //position: relative;
+      bottom: auto;
+      top: auto;
+      &__text {
+        padding: 2.2rem 1.8rem;
+        margin: -2.7rem 1.5rem 2.7rem;
+        background: #1f2229;
+        color: #fff;
+        box-shadow: none;
+        .bigtext {
+          font-size: 3.6rem;
+          line-height: 1;
+        }
+        p {
+          margin: 1rem 0 1.8rem;
+          font-size: 1.6rem;
+        }
+        // .teaser-more{display: none}
+      }
+    }
+  }
+}
+
+.teaser-heading {
+  z-index: 10;
+  background: transparent;
+  padding: 4rem 0 1rem;
+
+  .header-menu {
+    position: relative;
+    margin-left: auto;
+  }
+  .menu {
+    padding: 1px 0 0.5rem;
+    margin: 0;
+    display: flex;
+    user-select: none;
+    &.opened {
+      opacity: 1;
+      transform: translateY(0);
+      transition: 0.4s ease-in-out;
+    }
+    &-burger {
+      display: none;
+      position: relative;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      &:active {
+        opacity: 0;
+        transition: 0.2s ease-in;
+      }
+      font-size: 2px;
+      height: 17em;
+      width: 13em;
+
+      &:before,
+      &:after,
+      span {
+        content: "";
+        position: absolute;
+        display: block;
+        background: #fff;
+        height: 1em;
+        width: 100%;
+        opacity: 1;
+        transform-origin: 6% 50%;
+        transition: 0.5s ease;
+      }
+      span {
+        top: calc(50% - 0.5em);
+        transition-delay: 0.1s;
+      }
+      &:before {
+        top: 18%;
+      }
+      &:after {
+        bottom: 18%;
+      }
+
+      &.opened {
+        span {
+          opacity: 0;
+          transition: 0s;
+          transition-delay: 0s;
+        }
+        &:before {
+          transform: rotate(45deg);
+          width: 120%;
+        }
+        &:after {
+          transform: rotate(-45deg);
+          width: 120%;
+        }
+      }
+    }
+    &__item {
+      display: block;
+      list-style: none;
+      font: 700 1.6rem/1.38 $font1;
+      margin-left: 1.8rem;
+      color: #fff;
+      padding: 0 0.4rem;
+      text-shadow: 0 0 0.3em rgba(0, 0, 0, 0.4);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: opacity 0.4s ease-in-out;
+      &:hover {
+        //opacity: .8;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+      }
+      //&.active{color:#C882FF;}
+    }
+
+    @media (max-width: 1240px) {
+      position: absolute;
+      right: -1.2rem;
+      top: -1.6rem;
+      padding: 5rem 6rem 2rem 3rem;
+      background: #8a7e7e69;
+      backdrop-filter: blur(1rem);
+      flex-direction: column;
+      box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+
+      transform: translateY(-200%);
+      opacity: 0;
+      transition: transform 0.4s linear, opacity 0.2s 0.1s;
+      &__item {
+        width: 18rem;
+        margin-bottom: 0.9rem;
+        font-size: 2rem;
+        margin-left: 0;
+      }
+      &-burger {
+        display: block;
+      }
+    }
+  }
+  .btn {
+    color: #fff;
+    border-color: #fff;
+    display: block;
+    margin-bottom: 0;
+    margin-left: 1.8rem;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      backdrop-filter: blur(21px);
+      transform: translateY(-2px);
+    }
+  }
+
+  &.sticky {
+    position: fixed;
+    top: -6.9rem;
+    transform: translateY(6.9rem);
+    padding: 1rem 0;
+    background: #fff;
+    box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.1);
+    transition: transform 1.4s;
+    .logo {
+      img {
+        display: block;
+        filter: invert(1);
+      }
+    }
+    .menu {
+      &__item {
+        color: #1f2229;
+        text-shadow: none;
+        &:hover {
+          opacity: 0.7;
+        }
+        &.active {
+          color: #c882ff;
+          opacity: 1;
+          text-shadow: none;
+        }
+      }
+    }
+    .btn {
+      border-color: #000;
+      color: #000;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    @media (max-width: 1240px) {
+      position: absolute;
+    }
+  }
+}
+
+// TODO: перенести в teaser.scss
+@media (max-width: 600px) {
+  .teaser-body {
+    position: relative;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .btn {
+      margin-top: 1.8rem;
+    }
+  }
+}

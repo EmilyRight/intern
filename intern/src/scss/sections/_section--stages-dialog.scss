@@ -1,0 +1,129 @@
+.section--stages-dialog {
+  background-color: $color-black;
+
+  .section-layer {
+    display: block;
+    padding-bottom: 0;
+  }
+
+  .box-content {
+    width: 120rem;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .box-pic {
+    width: 130rem;
+    max-width: 100%;
+    margin: 5rem auto;
+
+    .people {
+      img {
+        width: 41.5rem;
+      }
+    }
+
+    .pic-layer--boy {
+      .people {
+        margin-bottom: 0;
+
+        &__pic {
+          img {
+            max-width: 40rem;
+            width: 39rem;
+          }
+        }
+
+        &__txt {
+          left: -81%;
+          top: 20%;
+          width: 34rem;
+        }
+      }
+    }
+
+    .pic-layer--girl {
+      .people {
+        &__pic {
+          img {
+            max-width: 60rem;
+            width: 54rem;
+
+          }
+        }
+
+        &__txt {
+          left: 45%;
+          top: -18%;
+          width: 44rem;
+
+        }
+
+      }
+    }
+  }
+
+  @media(max-width: 600px) {
+    .section-layer {
+      padding-top: 1rem
+    }
+    .box-content {
+      text-align: left
+    }
+    .box-pic {
+      align-items: flex-start;
+      margin-bottom: 0;
+
+    .people {
+      img {
+        width: 16rem;
+        max-width: 100%;
+      }
+    }
+    .pic-layer--girl .people{
+
+      &__txt {
+        left: 40%;
+        width: 23.7rem;
+        top: -3%;
+      }
+
+      &__pic {
+
+        margin-left: -5rem;
+
+        img {
+          width: 29rem;
+        }
+      }
+    }
+    .pic-layer--boy .people {
+      margin-top: 15rem;
+      margin-left: -7rem;
+
+      &__pic {
+        left: -65%;
+        img {
+          width: 24.7rem;
+        }
+      }
+
+      &__txt {
+        left: -73%;
+        top:40%;
+        width: 19.7rem;
+        span {
+          &:before {
+            bottom: auto;
+            top: -3rem;
+            left: auto;
+            transform: rotate(-255deg) scale(1, 1);
+          }
+        }
+      }
+    }
+  }
+  }
+
+}

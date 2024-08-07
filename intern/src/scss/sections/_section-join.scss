@@ -1,0 +1,35 @@
+.section--join{background-color: $color-white;
+  .section-layer{display: block}
+  .box-content{width: 80rem;max-width: 100%;
+    margin: 0 auto;text-align: center;
+    &__text{width: 67rem;max-width: 100%;margin: 0 auto}
+  }
+
+  .box-pic{width: 110rem;max-width: 100%;margin: 5rem auto;
+    .people{ img{width: 21.5rem;}}
+
+    .pic-layer--boy{
+      .people{margin-bottom:-100%;
+        &__txt{top:32%;}
+      }
+    }
+  }
+
+  @media(max-width:600px){
+    .section-layer{padding-top: 1rem;
+      margin-bottom:  11rem;}
+    .box-content{text-align: left}
+    .box-pic{align-items: flex-start;margin-bottom: 0}
+
+    .people{
+      img{width: 16rem;max-width: 100%;}
+    }
+    .pic-layer--girl .people{
+      &__txt{left: 110%;
+        width: 15rem;}
+    }
+    .pic-layer--boy .people{margin-top:18rem;
+      &__txt{right: 110%;top:15%;}
+    }
+  }
+}

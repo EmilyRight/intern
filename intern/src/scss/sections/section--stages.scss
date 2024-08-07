@@ -1,0 +1,86 @@
+.section--stages {
+  margin-top: -1rem;
+  color: $color-white;
+  background-color: $color-black;
+  text-align: center;
+
+  .section-layer{
+    padding-bottom: 0;
+    padding-top: 1rem;
+    @media (max-width: $mobile){
+      padding-top: 3rem;
+    }
+  }
+  .btn{
+    @media (max-width: $mobile){
+      margin-top: 3.2rem;
+    }
+  }
+  .box-content{
+    &--title{ //TODO:переделать!
+      margin: 0 auto;
+      text-align: center;
+      color: $color-white;
+      padding-bottom: 4.6rem;
+      @media (max-width: $mobile){
+        text-align: left;
+        padding-bottom: 2.6rem ;
+        margin-left: 0;
+      };
+    }
+  }
+
+  @import "../plugins/swiper/swiper";
+  .stages__slider {
+
+    .swiper-pagination_stages{
+      margin-top:  1.8rem ;
+      .swiper-pagination-bullet{
+        margin: 0 0.4rem ;
+        background: $color-black;
+        border: 1px solid $color-white;
+        &-active{
+          background: $color-violet;
+          border: none;
+        }
+      }
+
+    }
+    .swiper-slide {
+      text-align: left;
+      background-color: $color-white;
+      color: $color-dark;
+      border-radius: 1.2rem;
+
+      padding: 3rem 2rem 2rem 2rem;
+      width: auto;
+      height: auto;
+      @media (max-width: 600px) {
+        padding: 2.4rem 1.8rem 1.8rem 1.8rem;
+        width: 30rem;
+
+      }
+
+
+      .slide {
+        @media (max-width: 600px) {
+
+        }
+        &__title {
+          font-family: $font2;
+          font-size: 2.6rem;
+          line-height: 3.6rem;
+          font-weight: bold;
+          margin: 1.4rem 0 1.2rem 0;
+
+        }
+
+        &__text {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

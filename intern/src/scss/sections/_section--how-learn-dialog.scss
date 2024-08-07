@@ -1,0 +1,65 @@
+.section--how-learn-dialog{background-color: $color-black; margin-top: -1rem;
+
+  @media (max-width: 600px){
+  padding-top: 3rem;}
+  .section-layer{display: block;padding-top:3rem;padding-bottom: 0;
+  @media(max-width:600px){
+    padding-top: 1rem}}
+
+  .box-content{width:120rem;max-width: 100%;
+    margin: 0 auto;text-align: center;
+    @media(max-width:600px){
+     text-align: left}
+  }
+
+  .box-pic{width: 130rem;max-width: 100%;margin: 0 auto;
+    @media(max-width:600px){
+    align-items: flex-start;margin-bottom: 0;}
+    .people{ img{width: 42.5rem;}}
+
+    .pic-layer--boy {@media(max-width:600px){
+      margin-top: 14rem;}
+      .people {margin-bottom: 0;
+        .people__pic {margin-right: -10rem;
+          @media(max-width:600px){margin-right: -5rem;}
+          img {max-width: 50rem;width: 45rem;
+            @media(max-width:600px){max-width: 30rem;width: 26rem;}
+          }
+        }
+        .people__txt{
+          left: -96%;top: 46%;width: 32.4rem;
+          @media(max-width:600px){
+            width: 19.7rem;left: -70%;top: 68%;
+            span{
+              &:before{
+              bottom: auto;top: -3rem;left: auto;
+              transform: rotate(-255deg) scale(1, 1);
+             }
+            }
+          }
+        }
+      }
+    }
+    .pic-layer--girl{
+      .people{
+        .people__pic{margin-left: -8rem;@media(max-width:600px){
+          margin-left: -10rem;}
+          img{max-width: 45rem;width: 35.6rem;
+            @media(max-width:600px){
+              max-width: 30rem;
+              width: 24.6rem;
+            }
+          }
+        }
+        .people__txt{
+          left: 120%;top: 10%;width: 41.4rem;
+          @media(max-width:600px){width: 19rem;top: 5%;left: 104%
+          }
+        }
+
+      }
+    }
+  }
+}
+
+
