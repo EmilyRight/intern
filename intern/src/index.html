@@ -79,6 +79,19 @@
     </script>
   </head>
   <body>
+    <div>
+      <div class="svgs">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <g id="openup-arrow">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.626145 0.292893C1.01667 -0.0976311 1.64983 -0.0976311 2.04036 0.292893L9.99992 8.25245L17.9595 0.292893C18.35 -0.0976311 18.9832 -0.0976311 19.3737 0.292893C19.7642 0.683417 19.7642 1.31658 19.3737 1.70711L10.707 10.3738C10.3165 10.7643 9.68334 10.7643 9.29281 10.3738L0.626145 1.70711C0.235621 1.31658 0.235621 0.683417 0.626145 0.292893Z"
+              fill="currentColor" />
+          </g>
+        </svg>
+      </div>
+    </div>
     <div class="page">
       <!-- START SECTIONS -->
       <header class="header">
@@ -101,7 +114,7 @@
             <ul class="header-nav__menu menu">
               <li class="menu__item" data-section="about">О стажировке</li>
               <li class="menu__item" data-section="stages">Этапы</li>
-              <li class="menu__item" data-section="programm">Программа</li>
+              <li class="menu__item" data-section="program">Программа</li>
               <li class="menu__item" data-section="what-next">Что потом</li>
               <li class="menu__item" data-section="frame">Условия</li>
               <li class="menu__item" data-section="specialization">
@@ -113,372 +126,371 @@
           <div class="header-nav__icon burger-icon"><span></span></div>
         </div>
       </header>
-      <section class="section teaser">
-        <div class="teaser__video-layer video-layer">
-          <video
-            width="100%"
-            id="video-teaser"
-            autoplay
-            loop
-            muted
-            playsinline
-            autobuffer
-            poster="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAALUlEQVQImQEiAN3/AcbW3P/Uz9AAKCEgAOru6wACAvv4AIt/fACqo54A/wMBADGqD4PRPMQDAAAAAElFTkSuQmCC">
-            <source src="./video/video.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="teaser-heading">
-          <div class="container">
-            <div class="top-line">
-              <a
-                href="https://tele2.ru/opros/intern"
-                class="btn top-line__button js-gtm-event"
-                data-section="topline"
-                data-event="send-request"
-                target="_blank"
-                >Подать заявку</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="teaser-body">
-          <div class="container">
-            <div class="teaser-body__text">
-              <div class="bigtext wow fadeIn">СТАНЬ НОВЫМ ГЕРОЕМ TELE2</div>
-              <p class="subline wow fadeIn" data-wow-delay=".1s">
-                Все о&nbsp;том, как стать частью нашей команды
-              </p>
-              <a
-                href=""
-                class="teaser-btn-more teaser-more js-gtm-event wow fadeIn js-go-next"
+      <div class="white-bg">
+        <section class="section teaser">
+          <div class="teaser__container container">
+            <div class="teaser__grid teaser-grid">
+              <div class="teaser-grid__video">
+                <video
+                  width="100%"
+                  id="video-teaser"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  autobuffer
+                  poster="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAALUlEQVQImQEiAN3/AcbW3P/Uz9AAKCEgAOru6wACAvv4AIt/fACqo54A/wMBADGqD4PRPMQDAAAAAElFTkSuQmCC">
+                  <source src="./video/video.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div
+                class="teaser-grid__body teaser-body teaser-more js-gtm-event js-go-next"
                 data-wow-delay=".6s"
                 data-event=""
                 data-section="teaser">
-                <span>Подробнее</span>
-                <span class="btn-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="13"
-                    height="11"
-                    viewBox="0 0 16 15">
-                    <g fill="none" fill-rule="evenodd">
-                      <g fill="#FFF">
-                        <path
-                          d="M11.651 3c.804 0 1.455.652 1.455 1.459v7.264c0 .432-.186.82-.483 1.088-.26.24-.608.386-.99.386H4.367c-.758 0-1.382-.572-1.452-1.314l-.007-.14c0-.804.652-1.455 1.459-1.455l5.828-.001V4.459c0-.758.573-1.382 1.314-1.452L11.651 3z"
-                          transform="translate(-171 -545) translate(71 542) translate(100) rotate(45 8.007 8.098)" />
-                      </g>
-                    </g>
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section--join" data-menu="join">
-        <div class="section-layer">
-          <div class="box-content">
-            <h2 class="box-content__title wow fadeInUp">
-              Присоединяйся к&nbsp;команде t2
-            </h2>
-            <div class="box-content__text wow fadeIn" data-wow-delay=".6s">
-              <p>
-                Приходи к&nbsp;нам на&nbsp;стажировку и&nbsp;меняй правила
-                на&nbsp;рынке телекома вместе с&nbsp;нами. Обещаем&nbsp;&mdash;
-                классную команду, полезный опыт, амбициозные задачи.
-              </p>
-            </div>
-          </div>
-          <div class="box-pic">
-            <div class="pic-layer pic-layer--girl">
-              <div class="people wow fadeIn" data-wow-delay=".2s">
-                <div class="people__pic">
-                  <img src="./img/page/girl_section-join.svg" alt="" />
+                <div class="teaser-body__text">
+                  <div class="bigtext">СТАНЬ НОВЫМ ГЕРОЕМ t2</div>
+                  <p class="subline" data-wow-delay=".1s">
+                    Все о&nbsp;том, как стать частью нашей команды
+                  </p>
                 </div>
-                <div class="people__txt">
-                  <span>Что меня ждет на стажировке?</span>
+                <a
+                  href="https://tele2.ru/opros/intern"
+                  class="btn teaser-body__button js-gtm-event"
+                  data-section="topline"
+                  data-event="send-request"
+                  target="_blank"
+                  >Подать заявку</a
+                >
+              </div>
+              <div class="teaser-grid__upper-block"></div>
+              <div class="teaser-grid__down-block"></div>
+            </div>
+          </div>
+        </section>
+        <section class="section section-join join" data-menu="join">
+          <div class="container">
+            <div class="join__content join-content">
+              <h2 class="join-content__title">
+                Присоединяйся к&nbsp;команде t2
+              </h2>
+              <div class="join-content__text" data-wow-delay=".6s">
+                <p>
+                  Приходи к&nbsp;нам на&nbsp;стажировку и&nbsp;меняй правила
+                  на&nbsp;рынке телекома вместе с&nbsp;нами.
+                  Обещаем&nbsp;&mdash; классную команду, полезный опыт,
+                  амбициозные задачи.
+                </p>
+              </div>
+            </div>
+            <div class="join__image join-image">
+              <div class="join-image__pic-layer pic-layer pic-layer_girl">
+                <div class="pic-layer__wrapper" data-wow-delay=".2s">
+                  <img src="./img/page/join-girl.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="join-image__pic-layer pic-layer pic-layer_boy">
+                <div class="pic-layer__wrapper" data-wow-delay=".6s">
+                  <img src="./img/page/join-boy.svg" alt="" />
                 </div>
               </div>
             </div>
-
-            <div class="pic-layer pic-layer--boy">
-              <div class="people wow fadeIn" data-wow-delay=".6s">
-                <div class="people__pic">
-                  <img src="./img/page/boy_section-join.svg" alt="" />
-                </div>
-                <div class="people__txt"><span>Рассказываем!</span></div>
-              </div>
+          </div>
+        </section>
+        <section class="section section-about about" data-menu="about">
+          <div class="about__container container">
+            <div class="about__content about-content">
+              <h2 class="about-content__title">Что тебя ждет</h2>
+              <ul class="about-content__cards cards-list">
+                <li class="cards-list__item card">
+                  <div class="card__icon">
+                    <img src="./img/icons/icons-new/about-icon-1.svg" alt="" />
+                  </div>
+                  <div class="card__title">Интересные задачи</div>
+                  <div class="card__text">
+                    С&nbsp;первого дня ты&nbsp;начнешь участвовать
+                    в&nbsp;масштабных проектах наравне с&nbsp;коллегами,
+                    выполняя реальные задачи для развития компании.
+                  </div>
+                </li>
+                <li class="cards-list__item card">
+                  <div class="card__icon">
+                    <img src="./img/icons/icons-new/about-icon-2.svg" alt="" />
+                  </div>
+                  <div class="card__title">Сильная команда</div>
+                  <div class="card__text">
+                    Ты&nbsp;будешь работать и&nbsp;учиться у&nbsp;настоящих
+                    профессионалов своего дела. Ещё у&nbsp;тебя будет свой
+                    наставник, к&nbsp;которому ты&nbsp;всегда сможешь
+                    обратиться.
+                  </div>
+                </li>
+                <li class="cards-list__item card">
+                  <div class="card__icon">
+                    <img src="./img/icons/icons-new/about-icon-3.svg" alt="" />
+                  </div>
+                  <div class="card__title">Удобные условия</div>
+                  <div class="card__text">
+                    На&nbsp;время учебы&nbsp;&mdash; гибкий график. У&nbsp;тебя
+                    будет официальное трудоустройство с&nbsp;зарплатой
+                    и&nbsp;страховкой, а&nbsp;ещё оплачиваемая сотовая связь t2.
+                  </div>
+                </li>
+                <li class="cards-list__item card">
+                  <div class="card__icon">
+                    <img src="./img/icons/icons-new/about-icon-4.svg" alt="" />
+                  </div>
+                  <div class="card__title">Свободная атмосфера</div>
+                  <div class="card__text">
+                    Друг с&nbsp;другом мы&nbsp;на&nbsp;&laquo;ты&raquo;,
+                    по&nbsp;офису можно ездить на&nbsp;самокате и&nbsp;приходить
+                    в&nbsp;джинсах, в&nbsp;кафетериях всегда вкусный
+                    кофе&nbsp;&mdash; все для комфортной работы.
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section section--about" data-menu="about">
-        <div class="section-layer">
-          <div class="box-content">
-            <h2 class="box-content__title slider-title">Что тебя ждет</h2>
-            <div class="swiper-container slider-about">
-              <div class="box-slider swiper-wrapper">
-                <div class="box-slider__item swiper-slide">
-                  <div class="slide">
-                    <div class="slide__title">Интересные задачи</div>
-                    <div class="slide__text">
-                      С&nbsp;первого дня ты&nbsp;начнешь участвовать
-                      в&nbsp;масштабных проектах наравне с&nbsp;коллегами,
-                      выполняя реальные задачи для развития компании.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="box-slider__item swiper-slide">
-                  <div class="slide">
-                    <div class="slide__title">Сильная команда</div>
-                    <div class="slide__text">
-                      Ты&nbsp;будешь работать и&nbsp;учиться у&nbsp;настоящих
-                      профессионалов своего дела. Ещё у&nbsp;тебя будет свой
-                      наставник, к&nbsp;которому ты&nbsp;всегда сможешь
-                      обратиться.
-                    </div>
-                  </div>
-                </div>
-                <div class="box-slider__item swiper-slide">
-                  <div class="slide">
-                    <div class="slide__title">Удобные условия</div>
-                    <div class="slide__text">
-                      На&nbsp;время учебы&nbsp;&mdash; гибкий график.
-                      У&nbsp;тебя будет официальное трудоустройство
-                      с&nbsp;зарплатой и&nbsp;страховкой, а&nbsp;ещё
-                      оплачиваемая сотовая связь t2.
-                    </div>
-                  </div>
-                </div>
-                <div class="box-slider__item swiper-slide">
-                  <div class="slide">
-                    <div class="slide__title">Свободная атмосфера</div>
-                    <div class="slide__text">
-                      Друг с&nbsp;другом мы&nbsp;на&nbsp;&laquo;ты&raquo;,
-                      по&nbsp;офису можно ездить на&nbsp;самокате
-                      и&nbsp;приходить в&nbsp;джинсах, в&nbsp;кафетериях всегда
-                      вкусный кофе&nbsp;&mdash; все для комфортной работы.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="box-slider__item frame"></div>
-                <!-- TODO: вставлять динамически -->
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <div class="box-content__button">
+        </section>
+        <section class="section section-qualities qualities" data-menu="frame">
+          <div class="qualities__container container">
+            <div class="qualities__content qualities-content">
+              <h2 class="qualities-content__title">
+                Узнаешь себя?<br />Присоединяйся!
+              </h2>
+              <ul class="qualities-content__list qualities-list">
+                <li class="qualities-list__item">
+                  Ты&nbsp;студент 4 курса бакалавриата, 1-2 курса магистратуры
+                  или выпускник 2023 года
+                </li>
+                <li class="qualities-list__item">
+                  Твой профиль&nbsp;&mdash; математика, телеком, IT, аналитика,
+                  финансы, маркетинг, физика, радиотехника, менеджмент или
+                  информационно-телекомуникационные системы и&nbsp;сети
+                </li>
+                <li class="qualities-list__item">
+                  Ты&nbsp;готов работать от&nbsp;20&nbsp;часов в&nbsp;офисе
+                </li>
+              </ul>
               <a
-                class="btn btn-black js-gtm-event"
                 href="https://tele2.ru/opros/intern"
-                data-section="about"
-                data-event="send-request"
+                class="btn btn-secondary js-gtm-event"
                 target="_blank"
+                data-event="send-request"
+                data-section="section-frame"
                 >Подать заявку</a
               >
             </div>
-          </div>
-          <div class="box-pic">
-            <div class="pic-layer pic-layer__book">
-              <img
-                class="book"
-                src="./img/page/section-join-picture.svg"
-                alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--stages-dialog" data-menu="stages-dialog">
-        <div class="section-layer">
-          <div class="box-content">
-            <div class="box-pic">
-              <div class="pic-layer pic-layer--girl">
-                <div class="people wow fadeIn" data-wow-delay=".2s">
-                  <div class="people__pic">
-                    <img src="./img/page/girl_section-stage.svg" alt="girl" />
-                  </div>
-                  <div class="people__txt">
-                    <span>Как я буду погружаться в рабочий процесс?</span>
-                  </div>
-                </div>
+            <div class="qualities__image qualities-image">
+              <div class="qualities-image__pic-layer pic-layer_girl">
+                <img src="./img/page/qualities-girl.svg" alt="" />
               </div>
-              <div class="pic-layer pic-layer--boy">
-                <div class="people wow fadeIn" data-wow-delay=".6s">
-                  <div class="people__pic">
-                    <img src="./img/page/boy_section-stage.svg" alt="boy" />
-                  </div>
-                  <div class="people__txt people__txt--revers">
-                    <span>Не переживай, все будет постепенно</span>
-                  </div>
-                </div>
+              <div
+                class="qualities-image__pic-layer pic-layer wow fadeIn pic-layer_desk-left"
+                data-wow-delay=".4s">
+                <img src="./img/page/qualities-desk-left.svg" alt="" />
+              </div>
+              <div
+                class="qualities-image__pic-layer pic-layer wow fadeIn pic-layer_desk-right-1"
+                data-wow-delay=".8s">
+                <img src="./img/page/qualities-desk-right1.svg" alt="" />
+              </div>
+              <div
+                class="qualities-image__pic-layer pic-layer wow fadeIn pic-layer_desk-right-2"
+                data-wow-delay="1.2s">
+                <img src="./img/page/qualities-desk-right2.svg" alt="" />
+              </div>
+              <div
+                class="qualities-image__pic-layer pic-layer pic-layer_desk-right-3 wow fadeIn"
+                data-wow-delay="1.2s">
+                <img src="./img/page/qualities-desk-right3.svg" alt="" />
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section section--stages">
-        <div class="section-layer">
-          <div class="box-content">
-            <h2 class="box-content--title">
-              Стажировка включает в&nbsp;себя три этапа
+        </section>
+        <section class="section section-stages stages" data-menu="stages">
+          <div class="stages__container container">
+            <div class="stages__content stages-content">
+              <h2 class="stages-content__title">
+                Стажировка включает в&nbsp;себя три этапа
+              </h2>
+              <ul class="stages-content__cards cards-list">
+                <li class="cards-list__item card">
+                  <div class="card__icon">1</div>
+                  <div class="card__title">Знакомство: 2 месяца</div>
+                  <div class="card__text">
+                    Первые два месяца мы&nbsp;постепенно будем погружать тебя
+                    в&nbsp;ценности, практики работы и&nbsp;профессиональную
+                    специфику нашей компании. Особое внимание уделим развитию
+                    базовых компетенций.
+                  </div>
+                </li>
+                <li class="cards-list__item card">
+                  <div class="card__icon">2</div>
+                  <div class="card__title">Задачи: 7 месяцев</div>
+                  <div class="card__text">
+                    Следующий период —это полноценное включение в повседневную
+                    работу с&nbsp;реальными задачами и&nbsp;интересными
+                    проектами. Самое время для развития инновационности
+                    и&nbsp;бизнес-мышления.
+                  </div>
+                </li>
+                <li class="cards-list__item card">
+                  <div class="card__icon">3</div>
+                  <div class="card__title">Возможности: 3 месяца</div>
+                  <div class="card__text">
+                    Приобретя знания и&nbsp;опыт, ты&nbsp;сфокусируешься
+                    на&nbsp;собственном проекте, который ты&nbsp;будешь вести
+                    в&nbsp;течение трех месяцев. На&nbsp;этом этапе тебе
+                    особенно пригодятся приобретенные ранее навыки,
+                    а&nbsp;в&nbsp;фокусе будет развитие лидерской компетенции.
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section section-program program" data-menu="">
+          <div class="program__container container">
+            <div class="program__content program-content">
+              <div class="program-content__item program-text">
+                <h2 class="program-text__title">Обучение будет комплексным</h2>
+                <a
+                  href="https://tele2.ru/opros/intern"
+                  class="btn btn-secondary js-gtm-event"
+                  target="_blank"
+                  data-event="send-request"
+                  data-section="section-program"
+                  >Подать заявку</a
+                >
+              </div>
+              <div class="program-content__item program-image">
+                <div class="program-image__pic-layer">
+                  <img src="./img/page/program-image.svg" alt="" />
+                </div>
+                <div class="program-image__bg"></div>
+              </div>
+            </div>
+            <div class="program__cards cards-list">
+              <li class="cards-list__item card">
+                <div class="card__icon">
+                  <img src="./img/icons/icons-new/program-icon-1.svg" alt="" />
+                </div>
+                <div class="card__title">
+                  Постоянный контакт с&nbsp;наставником
+                </div>
+                <div class="card__text">
+                  Стажировка будет проходить под руководством наставника. Его
+                  задача&nbsp;&mdash; обучать, помогать и&nbsp;направлять.
+                </div>
+              </li>
+              <li class="cards-list__item card">
+                <div class="card__icon">
+                  <img src="./img/icons/icons-new/program-icon-2.svg" alt="" />
+                </div>
+                <div class="card__title">Тематические тренинги</div>
+                <div class="card__text">
+                  Индивидуальная и&nbsp;командная работа над развитием
+                  необходимых компетенций. Обещаем &mdash;будет интересно!
+                </div>
+              </li>
+              <li class="cards-list__item card">
+                <div class="card__icon">
+                  <img src="./img/icons/icons-new/program-icon-3.svg" alt="" />
+                </div>
+                <div class="card__title">Самостоятельное обучение</div>
+                <div class="card__text">
+                  На&nbsp;время учебы&nbsp;&mdash; гибкий график. У&nbsp;тебя
+                  будет официальное трудоустройство с&nbsp;зарплатой
+                  и&nbsp;страховкой, а&nbsp;ещё оплачиваемая сотовая связь t2.
+                </div>
+              </li>
+            </div>
+          </div>
+        </section>
+        <section class="section section-offer offer">
+          <div class="offer__container container">
+            <h2 class="offer__title offer__title_desktop">
+              В&nbsp;конце пути&nbsp;&mdash; предложение постоянной&nbsp;работы
             </h2>
-            <div class="stages__slider">
-              <div class="swiper swiper_stages">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide box-slider__item">
-                    <div class="slide wow fadeIn" data-wow-delay=".2s">
-                      <div class="slide__pic">
-                        <img src="./img/page/stages_boat.svg" alt="" />
-                      </div>
-                      <div class="slide__title">Знакомство: 2 месяца</div>
-                      <div class="slide__text">
-                        Первые два месяца мы&nbsp;постепенно будем погружать
-                        тебя в&nbsp;ценности, практики работы
-                        и&nbsp;профессиональную специфику нашей компании. Особое
-                        внимание уделим развитию базовых компетенций.
-                      </div>
+            <div class="offer__content offer-content">
+              <h2 class="offer-content__title offer__title_mobile">
+                В&nbsp;конце пути&nbsp;&mdash; предложение
+                постоянной&nbsp;работы
+              </h2>
+              <div class="offer__list openup-list">
+                <div class="openup-list__item item">
+                  <div class="item__header">
+                    <div
+                      class="item__title subtitle js-gtm-event"
+                      data-event="faq_get"
+                      data-section="section-faq">
+                      Ты&nbsp;с&nbsp;нами!
+                    </div>
+                    <div class="item__close-icon">
+                      <svg viewBox="0 0 22 11" width="100%">
+                        <use xlink:href="#openup-arrow"></use>
+                      </svg>
                     </div>
                   </div>
-
-                  <div class="swiper-slide box-slider__item">
-                    <div class="slide wow fadeIn" data-wow-delay=".4s">
-                      <div class="slide__pic">
-                        <img src="./img/page/stages_lamp.svg" alt="" />
-                      </div>
-                      <div class="slide__title">Задачи: 7 месяцев</div>
-                      <div class="slide__text">
-                        Следующий период —это полноценное включение в
-                        повседневную работу с&nbsp;реальными задачами
-                        и&nbsp;интересными проектами. Самое время для развития
-                        инновационности и&nbsp;бизнес-мышления.
-                      </div>
+                  <div class="item__text">
+                    Ты&nbsp;окончательно станешь частью нашей команды, заняв
+                    позицию специалиста, если она будет открыта.
+                  </div>
+                </div>
+                <div class="openup-list__item item">
+                  <div class="item__header">
+                    <div
+                      class="item__title subtitle js-gtm-event"
+                      data-event="faq_get"
+                      data-section="section-faq">
+                      Еще немного поднажать
+                    </div>
+                    <div class="item__close-icon">
+                      <svg viewBox="0 0 22 11" width="100%">
+                        <use xlink:href="#openup-arrow"></use>
+                      </svg>
                     </div>
                   </div>
-
-                  <div class="swiper-slide box-slider__item">
-                    <div class="slide wow fadeIn" data-wow-delay=".6s">
-                      <div class="slide__pic">
-                        <img src="./img/page/stages_rocket.svg" alt="" />
-                      </div>
-                      <div class="slide__title">Возможности: 3 месяца</div>
-                      <div class="slide__text">
-                        Приобретя знания и&nbsp;опыт, ты&nbsp;сфокусируешься
-                        на&nbsp;собственном проекте, который ты&nbsp;будешь
-                        вести в&nbsp;течение трех месяцев. На&nbsp;этом этапе
-                        тебе особенно пригодятся приобретенные ранее навыки,
-                        а&nbsp;в&nbsp;фокусе будет развитие лидерской
-                        компетенции.
-                      </div>
+                  <div class="item__text">
+                    Войдешь в&nbsp;кадровый резерв с&nbsp;продолжением
+                    стажировки еще на&nbsp;полгода.
+                  </div>
+                </div>
+                <div class="openup-list__item item">
+                  <div class="item__header">
+                    <div
+                      class="item__title subtitle js-gtm-event"
+                      data-event="faq_get"
+                      data-section="section-faq">
+                      Это было здорово!
+                    </div>
+                    <div class="item__close-icon">
+                      <svg viewBox="0 0 22 11" width="100%">
+                        <use xlink:href="#openup-arrow"></use>
+                      </svg>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-pagination_stages"></div>
-              </div>
-            </div>
-            <a
-              href="https://tele2.ru/opros/intern"
-              class="btn btn-secondary mt-1 js-gtm-event"
-              target="_blank"
-              data-event="send-request"
-              data-section="section-stages"
-              >Подать заявку</a
-            >
-          </div>
-        </div>
-      </section>
-      <section
-        class="section section--how-learn-dialog"
-        data-menu="how-learn-dialog">
-        <div class="section-layer">
-          <div class="box-content">
-            <div class="box-pic">
-              <div class="pic-layer pic-layer--girl">
-                <div class="people wow fadeIn" data-wow-delay=".2s">
-                  <div class="people__pic">
-                    <img src="./img/page/education_girl.svg" alt="girl" />
-                  </div>
-                  <div class="people__txt">
-                    <span>Какое у меня будет обучение?</span>
+                  <div class="item__text">
+                    Стажировка закончится, но&nbsp;полученные знания и&nbsp;опыт
+                    помогут тебе успешно выстроить дальнейшую карьеру.
                   </div>
                 </div>
-              </div>
-              <div class="pic-layer pic-layer--boy">
-                <div class="people wow fadeIn" data-wow-delay=".6s">
-                  <div class="people__pic">
-                    <img src="./img/page/education_boy.svg" alt="boy" />
-                  </div>
-                  <div class="people__txt people__txt--revers">
-                    <span>Разностороннее!</span>
-                  </div>
-                </div>
+                <a
+                  href="https://tele2.ru/opros/intern"
+                  class="btn btn-secondary js-gtm-event"
+                  target="_blank"
+                  data-event="send-request"
+                  data-section="section-what-next"
+                  >Подать заявку</a
+                >
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section section--programm" data-menu="">
-        <div class="section-layer">
-          <div class="box-content">
-            <h2 class="box-content__title">Обучение будет комплексным</h2>
+        </section>
+      </div>
 
-            <div class="box-info">
-              <div class="slide wow fadeIn" data-wow-delay=".2s">
-                <div class="slide__img">
-                  <img class="" src="./img/icons/pin.svg" alt="" />
-                </div>
-                <div class="text-wrapper">
-                  <div class="slide__title">
-                    Постоянный контакт с&nbsp;наставником
-                  </div>
-                  <div class="slide__text">
-                    Стажировка будет проходить под руководством наставника. Его
-                    задача&nbsp;&mdash; обучать, помогать и&nbsp;направлять.
-                  </div>
-                </div>
-              </div>
-              <div class="slide wow fadeIn" data-wow-delay=".4s">
-                <div class="slide__img">
-                  <img class="" src="./img/icons/pin.svg" alt="" />
-                </div>
-                <div class="text-wrapper">
-                  <div class="slide__title">Тематические тренинги</div>
-                  <div class="slide__text">
-                    Индивидуальная и&nbsp;командная работа над развитием
-                    необходимых компетенций. Обещаем&nbsp;&mdash;будет
-                    интересно!
-                  </div>
-                </div>
-              </div>
-
-              <div class="slide wow fadeIn" data-wow-delay=".6s">
-                <div class="slide__img">
-                  <img class="" src="./img/icons/pin.svg" alt="" />
-                </div>
-                <div class="text-wrapper">
-                  <div class="slide__title">Самостоятельное обучение</div>
-                  <div class="slide__text">
-                    У&nbsp;нас есть образовательная
-                    онлайн-платформа&nbsp;&mdash;&nbsp;Level Up. Там
-                    ты&nbsp;найдешь множество курсов по&nbsp;разным
-                    направлениям.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a
-              href="https://tele2.ru/opros/intern"
-              class="btn btn-secondary js-gtm-event"
-              target="_blank"
-              data-event="send-request"
-              data-section="section-programm"
-              >Подать заявку</a
-            >
-          </div>
-        </div>
-      </section>
       <section
         class="section section--what-next-dialog"
         data-menu="what-next-dialog">
@@ -486,7 +498,7 @@
           <div class="box-content">
             <div class="box-pic">
               <div class="pic-layer pic-layer--girl">
-                <div class="people wow fadeIn" data-wow-delay=".2s">
+                <div class="people fadeIn" data-wow-delay=".2s">
                   <div class="people__pic">
                     <img src="./img/page/whatnext_girl.svg" alt="" />
                   </div>
@@ -496,7 +508,7 @@
                 </div>
               </div>
               <div class="pic-layer pic-layer--boy">
-                <div class="people wow fadeIn" data-wow-delay=".6s">
+                <div class="people fadeIn" data-wow-delay=".6s">
                   <div class="people__pic">
                     <img src="./img/page/whatnext-boy.svg" alt="" />
                   </div>
@@ -509,124 +521,7 @@
           </div>
         </div>
       </section>
-      <section class="section section--what-next">
-        <div class="section-layer">
-          <div class="box-content">
-            <h2 class="box-content--title">
-              В&nbsp;конце пути&nbsp;&mdash; предложение постоянной&nbsp;работы
-            </h2>
-            <div class="what-next__slider">
-              <div class="swiper swiper_what-next">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide box-slider__item">
-                    <div class="slide">
-                      <div class="slide__pic">
-                        <img src="./img/page/heart.svg" alt="подводная лодка" />
-                      </div>
-                      <div class="slide__title">Ты&nbsp;с&nbsp;нами!</div>
-                      <div class="slide__text">
-                        Ты&nbsp;окончательно станешь частью нашей команды, заняв
-                        позицию специалиста, если она будет открыта.
-                      </div>
-                    </div>
-                  </div>
 
-                  <div class="swiper-slide box-slider__item">
-                    <div class="slide">
-                      <div class="slide__pic">
-                        <img src="./img/page/touch.svg" alt="подводная лодка" />
-                      </div>
-                      <div class="slide__title">Еще немного поднажать</div>
-                      <div class="slide__text">
-                        Войдешь в&nbsp;кадровый резерв с&nbsp;продолжением
-                        стажировки еще на&nbsp;полгода.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide box-slider__item">
-                    <div class="slide">
-                      <div class="slide__pic">
-                        <img src="./img/page/medal.svg" alt="подводная лодка" />
-                      </div>
-                      <div class="slide__title">Это было здорово!</div>
-                      <div class="slide__text">
-                        Стажировка закончится, но&nbsp;полученные знания
-                        и&nbsp;опыт помогут тебе успешно выстроить дальнейшую
-                        карьеру.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination_next"></div>
-              </div>
-            </div>
-
-            <a
-              href="https://tele2.ru/opros/intern"
-              class="btn btn-secondary mb-8 mt-5 js-gtm-event"
-              target="_blank"
-              data-event="send-request"
-              data-section="section-what-next"
-              >Подать заявку</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--frame" data-menu="frame">
-        <div class="section-layer">
-          <div class="box-content">
-            <div class="frame">
-              <div class="frame__bg">
-                <img src="./img/page/frame-bg.svg" alt="" />
-              </div>
-              <div class="frame__content">
-                <h2 class="box-content__title">
-                  Узнаешь себя?<br />Присоединяйся!
-                </h2>
-                <div class="box-content__text">
-                  <div class="frame-list">
-                    <p class="frame-list__item wow fadeIn" data-wow-delay=".2s">
-                      Ты&nbsp;студент 4 курса бакалавриата, 1-2 курса
-                      магистратуры или выпускник 2023 года
-                    </p>
-                    <p class="frame-list__item wow fadeIn" data-wow-delay=".3s">
-                      Твой профиль&nbsp;&mdash; математика, телеком, IT,
-                      аналитика, финансы, маркетинг, физика, радиотехника,
-                      менеджмент или информационно-телекомуникационные системы
-                      и&nbsp;сети
-                    </p>
-                    <p class="frame-list__item wow fadeIn" data-wow-delay=".4s">
-                      Ты&nbsp;готов работать от&nbsp;20&nbsp;часов в&nbsp;офисе
-                    </p>
-                  </div>
-                  <a
-                    href="https://tele2.ru/opros/intern"
-                    class="btn btn-secondary js-gtm-event"
-                    target="_blank"
-                    data-event="send-request"
-                    data-section="section-frame"
-                    >Подать заявку</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="box-pic">
-            <div
-              class="pic-layer pic-layer--lightning wow bounceInUp"
-              data-wow-delay=".3s">
-              <div class="lightling">
-                <img
-                  class="lightning__img"
-                  src="./img/page/lightning.svg"
-                  alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section
         class="section section--specialization-dialog section--specialization"
         data-menu="specialization">
@@ -634,7 +529,7 @@
           <div class="box-pic">
             <div class="pic-layer pic-layer--girl">
               <div
-                class="people wow fadeInLeftBig"
+                class="people fadeInLeftBig"
                 data-wow-delay=".2s"
                 data-wow-offset="150">
                 <div class="people__pic">
@@ -647,7 +542,7 @@
             </div>
             <div class="pic-layer pic-layer--boy">
               <div
-                class="people wow fadeInRightBig"
+                class="people fadeInRightBig"
                 data-wow-delay=".6s"
                 data-wow-offset="170">
                 <div class="people__pic">

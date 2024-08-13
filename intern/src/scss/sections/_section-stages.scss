@@ -1,0 +1,27 @@
+.stages {
+  padding-top: 0.8rem;
+  padding-bottom: 2.4rem;
+  @media (min-width: $mobile-small) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .stages-content {
+    &__title {
+      @include section-title-main;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  .card {
+    box-shadow: 0px 2px 16px 0px #0000000f, 0px -10px 22px 0px #00000008;
+
+    @media (min-width: $mobile-small) {
+      max-width: calc(100% / 3 - 1.6rem);
+    }
+    &__icon {
+      background-color: $color-t2-lightblue;
+      color: $color-t2-blue;
+    }
+  }
+}

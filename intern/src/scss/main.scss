@@ -1,8 +1,8 @@
-@import "./vars";
+@import "vars";
 @import "fonts2";
 @import "typo";
 
-@import "./mixins";
+@import "mixins";
 @import "base/base-reset";
 
 html {
@@ -17,7 +17,7 @@ body {
   overflow-y: scroll;
   min-width: 320px;
   margin: 0;
-  background-color: $color-white;
+
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: none;
@@ -29,6 +29,9 @@ body {
   background-color: $color-white;
   font: 1.6rem/1.375 "rooftop", sans-serif;
   -webkit-text-size-adjust: none;
+  @media (min-width: $mobile-small) {
+    background-color: $color-black;
+  }
   &.noscroll {
     overflow: hidden !important;
     padding-right: 21px;
@@ -83,14 +86,10 @@ body {
 }
 
 .white-bg {
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
-  border-radius: 1.2rem;
+  border-radius: 1.6rem;
   background-color: #fff;
   @media (min-width: $mobile-small) {
     border-radius: 3.2rem;
-    padding-top: 3.4rem;
-    padding-bottom: 3.4rem;
   }
 }
 
@@ -190,8 +189,8 @@ body {
 
 //@import "./bootstrap";
 @import "ui";
-@import "./sections";
-//@import "plugins/animate";
+@import "sections";
+@import "plugins/animate";
 
 /////// MQ /////
 @media (min-width: 1280px) {

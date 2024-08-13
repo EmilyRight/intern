@@ -1,35 +1,151 @@
-.section--join{background-color: $color-white;
-  .section-layer{display: block}
-  .box-content{width: 80rem;max-width: 100%;
-    margin: 0 auto;text-align: center;
-    &__text{width: 67rem;max-width: 100%;margin: 0 auto}
+.join {
+  padding-bottom: 2.4rem;
+  @media (min-width: $mobile-small) {
+    padding-top: 4rem;
+    padding-bottom: 8rem;
   }
 
-  .box-pic{width: 110rem;max-width: 100%;margin: 5rem auto;
-    .people{ img{width: 21.5rem;}}
-
-    .pic-layer--boy{
-      .people{margin-bottom:-100%;
-        &__txt{top:32%;}
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    @media (min-width: $mobile-small) {
+      flex-direction: row;
+      background-color: $color-t2-gray;
+      overflow: hidden;
+      border-radius: 3.2rem;
+    }
+  }
+  .join-content {
+    order: 2;
+    background-color: $color-t2-gray;
+    border-radius: 1.6rem;
+    padding: 1.2rem;
+    @media (min-width: $mobile-small) {
+      order: 1;
+      padding: 2.4rem;
+      max-width: 48.5%;
+      border-radius: 0;
+    }
+    &__title {
+      @include section-title-main;
+      margin-bottom: 4.4rem;
+      @media (min-width: $mobile-small) {
+        margin-bottom: 1.6rem;
       }
     }
+
+    &__text {
+      @include text-main;
+    }
   }
-
-  @media(max-width:600px){
-    .section-layer{padding-top: 1rem;
-      margin-bottom:  11rem;}
-    .box-content{text-align: left}
-    .box-pic{align-items: flex-start;margin-bottom: 0}
-
-    .people{
-      img{width: 16rem;max-width: 100%;}
+  .join-image {
+    background-color: $color-t2-gray;
+    border-radius: 1.6rem;
+    position: relative;
+    min-height: 20rem;
+    @media (min-width: $mobile-small) {
+      order: 2;
+      min-height: 30rem;
+      flex-basis: 100%;
+      border-radius: 0;
     }
-    .pic-layer--girl .people{
-      &__txt{left: 110%;
-        width: 15rem;}
+    &__pic-layer {
+      position: absolute;
+      height: 100%;
+      overflow: hidden;
     }
-    .pic-layer--boy .people{margin-top:18rem;
-      &__txt{right: 110%;top:15%;}
+  }
+  .pic-layer {
+    &_girl {
+      top: 0;
+      left: 0;
+      width: 17rem;
+      @media (min-width: $mobile-small) {
+        top: auto;
+        width: 27.5rem;
+        max-width: calc(50% - 2.4rem);
+      }
+      .pic-layer__wrapper {
+        background-color: $color-t2-blue;
+        width: 100%;
+        height: 100%;
+        height: 17.5rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: 1.6rem 0 1.6rem 0;
+        @media (min-width: $mobile-small) {
+          position: absolute;
+          bottom: 0;
+          height: 20.5rem;
+          border-radius: 1.6rem 1.6rem 0 0;
+          overflow: visible;
+        }
+      }
+
+      img {
+        max-height: 96%;
+        position: absolute;
+        bottom: -2rem;
+        right: -0.4rem;
+        @media (min-width: $mobile-small) {
+          bottom: 0rem;
+          right:5%;
+          max-height: none;
+          height: 124%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    &_boy {
+      bottom: 0;
+      right: 0;
+      width: 17rem;
+      @media (min-width: $mobile-small) {
+        top: 0;
+        right: 2.4rem;
+        bottom: auto;
+        width: 26rem;
+        max-width: calc(50% - 2.4rem);
+      }
+      .pic-layer__wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        height: 13.2rem;
+        background-color: $color-t2-green;
+        bottom: 0;
+        border-radius: 1.6rem 0 1.6rem 0;
+        @media (min-width: $mobile-small) {
+          top: 0;
+          height: 28.2rem;
+          overflow: hidden;
+          border-radius: 0 0 1.6rem 1.6rem;
+        }
+      }
+
+      img {
+        height: 138%;
+        position: absolute;
+        bottom: 0rem;
+        right: -0.4rem;
+        @media (min-width: $mobile-small) {
+          height: auto;
+          width: 82%;
+          right: 0;
+        }
+      }
+    }
+
+    // &__wrapper {
+    //   width: 100%;
+    //   height: 100%;
+    //   position: relative;
+    //   overflow: hidden;
+    // }
+
+    &__image {
     }
   }
 }

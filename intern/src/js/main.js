@@ -1,5 +1,9 @@
+import { WOW } from './vendor/wow.min';
+
+const wow = new WOW();
 document.addEventListener('DOMContentLoaded', () => {
   openMenu();
+  wow.init();
 });
 
 function openMenu() {
