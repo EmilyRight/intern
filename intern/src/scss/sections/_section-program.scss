@@ -133,17 +133,11 @@
     }
   }
   .card {
-    @media (min-width: $mobile-small) {
+    @media (min-width: $mobile) {
       max-width: calc(100% / 3 - 1.6rem);
     }
     &__icon {
       background-color: $color-t2-lightblue;
-    }
-
-    &__title {
-    }
-
-    &__text {
     }
   }
 }
