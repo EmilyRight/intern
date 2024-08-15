@@ -1,0 +1,159 @@
+.reviews {
+  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
+  background-color: $color-t2-gray;
+  &__container {
+  }
+
+  &__title {
+    @include section-title-main;
+    max-width: 70%;
+    line-height: 131%;
+    margin-bottom: 2.3rem;
+    @media (min-width: $mobile-small) {
+      max-width: 50%;
+    }
+  }
+
+  &__slider {
+  }
+  .container {
+  }
+  .reviews-slider {
+    &__wrapper {
+    }
+
+    &__item {
+    }
+  }
+  .swiper {
+    &_review {
+    }
+  }
+  .swiper-container {
+    margin-left: -1.8rem;
+    padding-left: 1.8rem;
+    margin-right: -1.8rem;
+    overflow: visible;
+    @media (min-width: $mobile-small) {
+      margin-left: -15%;
+      padding-left: 15%;
+      margin-right: -15%;
+    }
+  }
+  .swiper-wrapper {
+  }
+  .reviews-item {
+    &__person {
+    }
+  }
+  .swiper-slide {
+  }
+  .person {
+    overflow: hidden;
+    &__pic {
+      border-radius: 1.6rem;
+      overflow: hidden;
+      width: 100%;
+      height: 50vw;
+      margin-bottom: 1.2rem;
+      img {
+        width: 100%;
+        display: block;
+      }
+      @media (min-width: $mobile-small) {
+        height: 26rem;
+      }
+    }
+
+    &__desc {
+      padding: 2.4rem;
+      background-color: #fff;
+      border-radius: 1.6rem;
+    }
+
+    &__name {
+      @include section-title-reviews;
+      margin-bottom: 0.5rem;
+    }
+
+    &__role {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      margin-bottom: 1.6rem;
+      color: #8a8f97;
+      min-height: 5rem;
+    }
+
+    &__text {
+      max-height: 9rem;
+      margin-bottom: 1.2rem;
+      overflow: hidden;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 5rem;
+        width: 100%;
+        background-image: linear-gradient(to top, #fff, #ffffff00);
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  .userpic {
+  }
+  .open-popup-modal {
+    font-size: 1.5rem;
+  }
+  .link {
+    user-select: none;
+  }
+  .swiper-pagination--review {
+  }
+  .swiper-controls {
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    width: 5.4rem;
+    height: 2.4rem;
+    top: -9rem;
+    right: 11%;
+    @media (min-width: $mobile-small) {
+      width: 7.4rem;
+      height: 3.2rem;
+      top: -5.5rem;
+      right: 11%;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: static;
+    border-radius: 0.8rem;
+    svg {
+      max-width: 30%;
+    }
+    @media (min-width: $mobile-small) {
+      width: 3.2rem;
+      height: 3.2rem;
+      svg {
+        max-width: 30%;
+      }
+    }
+  }
+  .swiper-button-prev {
+    svg {
+      transform: rotate(-180deg);
+    }
+  }
+  .swiper-button-next {
+    svg {
+    }
+  }
+}

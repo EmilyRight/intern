@@ -1,10 +1,15 @@
+import { openModal } from './modal';
 import { WOW } from './vendor/wow.min';
+import Swiper from './vendor/swiper.min';
 
 const wow = new WOW();
+
 document.addEventListener('DOMContentLoaded', () => {
   wow.init();
   openMenu();
   handleFaqOpening();
+  openPopup();
+  handleSlider();
 });
 
 function openMenu() {
@@ -43,4 +48,34 @@ function handleFaqOpening() {
       }
     });
   });
+}
+
+// open pop-up modal
+function openPopup() {
+  const popupLinksList = document.querySelectorAll('.open-popup-modal');
+  popupLinksList.forEach((link) => {
+    const { popup } = link.dataset;
+    link.addEventListener('click', () => {
+      openModal(`#${popup}`);
+    });
+  });
+}
+
+function handleSlider() {
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1.2,
+    spaceBetween: 24,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      600: {
+        spaceBetween: 12,
+        slidesPerView: 3,
+      },
+    },
+  });
+  swiper.init();
 }

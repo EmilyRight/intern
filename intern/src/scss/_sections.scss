@@ -11,8 +11,9 @@
 @import "sections/section-program";
 @import "sections/_section-offer";
 @import "sections/section-specialization";
-// @import "sections/section-steps";
+@import "sections/section-steps";
 
-// @import "sections/section--faq";
-// @import "sections/section--footer";
-// @import "sections/section--reviews";
+@import "sections/section-reviews";
+@import "sections/section-faq";
+@import "sections/section-footer";
+@import "sections/pop-up-modal";

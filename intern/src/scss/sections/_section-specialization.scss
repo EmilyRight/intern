@@ -42,6 +42,7 @@
     padding: 1.2rem;
     border-radius: 1.6rem;
     @media (min-width: $mobile-small) {
+      height: 20rem;
       border-radius: 3.2rem;
       padding: 2.4rem;
     }
@@ -92,19 +93,20 @@
         max-width: calc(100% / 2 - 1.2rem / 2);
       }
     }
-    &.active {
-      svg {
-        transform: rotate(-180deg);
-      }
-      .item__text {
-        max-height: 100rem;
-        padding-top: 0.5rem;
-        opacity: 1;
-        @media (min-width: $mobile-small) {
-          padding-top: 0rem;
-        }
-      }
-    }
+    // &.active {
+    //   height: auto;
+    //   svg {
+    //     transform: rotate(-180deg);
+    //   }
+    //   .item__text {
+    //     max-height: 100rem;
+    //     padding-top: 0.5rem;
+    //     opacity: 1;
+    //     @media (min-width: $mobile-small) {
+    //       padding-top: 0rem;
+    //     }
+    //   }
+    // }
   }
   // .item:nth-child(1) {
   //   grid-column: 1/3;

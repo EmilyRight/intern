@@ -89,6 +89,20 @@
               d="M0.626145 0.292893C1.01667 -0.0976311 1.64983 -0.0976311 2.04036 0.292893L9.99992 8.25245L17.9595 0.292893C18.35 -0.0976311 18.9832 -0.0976311 19.3737 0.292893C19.7642 0.683417 19.7642 1.31658 19.3737 1.70711L10.707 10.3738C10.3165 10.7643 9.68334 10.7643 9.29281 10.3738L0.626145 1.70711C0.235621 1.31658 0.235621 0.683417 0.626145 0.292893Z"
               fill="currentColor" />
           </g>
+          <g id="openup-arrow-white">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.792893 0.292893C1.18342 -0.0976311 1.81658 -0.0976311 2.20711 0.292893L8.20711 6.29289C8.59763 6.68342 8.59763 7.31658 8.20711 7.70711L2.20711 13.7071C1.81658 14.0976 1.18342 14.0976 0.792893 13.7071C0.402369 13.3166 0.402369 12.6834 0.792893 12.2929L6.08579 7L0.792893 1.70711C0.402369 1.31658 0.402369 0.683417 0.792893 0.292893Z"
+              fill="white" />
+          </g>
+          <g id="close">
+            <path
+              fill="#1F2229"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M23.7215.279189c-.3692-.3691693-.9677-.3691702-1.3369 0L12 10.6638 1.61542.279189c-.36917-.3691702-.967709-.3691693-1.336879 0-.3691696.36917-.3691695.967711 0 1.336881L10.6631 12.0007.27854 22.3852c-.3691692.3692-.3691692.9678 0 1.3369.36917.3692.96771.3692 1.33688 0L12 13.3375l10.3846 10.3846c.3692.3692.9677.3692 1.3369 0 .3691-.3691.3691-.9677 0-1.3369L13.3369 12.0007 23.7215 1.61607c.3691-.36917.3691-.967711 0-1.336881Z" />
+          </g>
         </svg>
       </div>
     </div>
@@ -499,7 +513,9 @@
           <div class="specialization__container container">
             <h2 class="specialization__title">Есть из&nbsp;чего выбрать</h2>
             <div class="specialization__grid-cards openup-list">
-              <div class="openup-list__item item item_short">
+              <div
+                class="openup-list__item item item_short open-popup-modal"
+                data-popup="tech">
                 <div class="item__header">
                   <div class="item__title">Техническое управление</div>
                   <div class="item__close-icon">
@@ -520,7 +536,9 @@
                   intermediate будут плюсом.
                 </div>
               </div>
-              <div class="openup-list__item item item_short">
+              <div
+                class="openup-list__item item item_short open-popup-modal"
+                data-popup="analytics">
                 <div class="item__header">
                   <div class="item__title">Сетевая аналитика</div>
                   <div class="item__close-icon">
@@ -530,19 +548,22 @@
                   </div>
                 </div>
                 <div class="item__text">
-                  С начала стажировки ты будешь участвовать в проектах по
-                  контролю эксплуатации сетей сотовой связи и автоматизировать
-                  процессы технического контроля. Одними из твоих задач на
-                  стажировке будут сопровождение и контроль работы подрядчиков,
-                  сопровождение реестра локальной аренды каналов и проведение
-                  аудита данных в системах по размещению сетей связи. Также ты
-                  займешься оптимизацией затрат по размещению оборудования сетей
-                  связи. Тебе будет интересно это направление, если ты понимаешь
-                  принципы организации сетей мобильной сотовой связи и хорошо
-                  владеешь MS Office (Excel, Word).
+                  С&nbsp;начала стажировки ты&nbsp;будешь участвовать
+                  в&nbsp;проектах по контролю эксплуатации сетей сотовой связи
+                  и&nbsp;автоматизировать процессы технического контроля. Одними
+                  из&nbsp;твоих задач на стажировке будут сопровождение
+                  и&nbsp;контроль работы подрядчиков, сопровождение реестра
+                  локальной аренды каналов и&nbsp;проведение аудита данных
+                  в&nbsp;системах по&nbsp;размещению сетей связи. Также ты
+                  займешься оптимизацией затрат по&nbsp;размещению оборудования
+                  сетей связи. Тебе будет интересно это направление, если
+                  ты&nbsp;понимаешь принципы организации сетей мобильной сотовой
+                  связи и&nbsp;хорошо владеешь MS&nbsp;Office (Excel, Word).
                 </div>
               </div>
-              <div class="openup-list__item item item_short">
+              <div
+                class="openup-list__item item item_short open-popup-modal"
+                data-popup="IT">
                 <div class="item__header">
                   <div class="item__title">ИТ</div>
                   <div class="item__close-icon">
@@ -568,7 +589,9 @@
                   из&nbsp;направления внутри&nbsp;ИТ.
                 </div>
               </div>
-              <div class="openup-list__item item item_long">
+              <div
+                class="openup-list__item item item_long open-popup-modal"
+                data-popup="hr">
                 <div class="item__header">
                   <div class="item__title">Управление персоналом</div>
                   <div class="item__close-icon">
@@ -592,7 +615,9 @@
                   работы с&nbsp;графическими редакторами.
                 </div>
               </div>
-              <div class="openup-list__item item item_long">
+              <div
+                class="openup-list__item item item_long open-popup-modal"
+                data-popup="finances">
                 <div class="item__header">
                   <div class="item__title">Финансы и аудит</div>
                   <div class="item__close-icon">
@@ -617,7 +642,9 @@
                   поставленных задач.
                 </div>
               </div>
-              <div class="openup-list__item item item_long">
+              <div
+                class="openup-list__item item item_long open-popup-modal"
+                data-popup="sales">
                 <div class="item__header">
                   <div class="item__title">Продажи</div>
                   <div class="item__close-icon">
@@ -640,7 +667,9 @@
                   данных.
                 </div>
               </div>
-              <div class="openup-list__item item item_long">
+              <div
+                class="openup-list__item item item_long open-popup-modal"
+                data-popup="marketing">
                 <div class="item__header">
                   <div class="item__title">Маркетинг и PR</div>
                   <div class="item__close-icon">
@@ -667,41 +696,40 @@
             </div>
           </div>
         </section>
-      </div>
-
-      <section class="section section--steps">
-        <div class="section-layer">
-          <div class="box-content">
-            <h2 class="box-content__title">Как присоединиться</h2>
+        <section class="section section-steps steps">
+          <div class="steps__container container">
+            <h2 class="steps__title">Как присоединиться</h2>
+            <ul class="steps__list steps-list cards-list">
+              <li class="cards-list__item card">
+                <div class="card__icon">1</div>
+                <div class="card__title">Отправь заявку</div>
+              </li>
+              <li class="cards-list__item card">
+                <div class="card__icon">2</div>
+                <div class="card__title">Выполни тестирование</div>
+              </li>
+              <li class="cards-list__item card">
+                <div class="card__icon">3</div>
+                <div class="card__title">Пройди телефонное интервью</div>
+              </li>
+              <li class="cards-list__item card">
+                <div class="card__icon">4</div>
+                <div class="card__title">Прояви себя на очном интервью</div>
+              </li>
+            </ul>
+            <a href="https://tele2.ru/opros/intern" target="_blank" class="btn"
+              >Подать заявку</a
+            >
           </div>
-          <div class="box-pic">
-            <div class="pic-layer">
-              <div class="steps">
-                <svg
-                  data-url="./src/img/page/steps-big.svg"
-                  class="steps__pic big-picture"></svg>
-                <svg
-                  data-url="./src/img/page/steps-mob.svg"
-                  class="steps__pic mob-picture"></svg>
+        </section>
+        <section class="section section-reviews reviews" data-menu="reviews">
+          <div class="reviews__container container">
+            <h2 class="reviews__title">Познакомься с будущими коллегами</h2>
 
-                <!--<picture>
-                            <source srcset="./img/page/steps-mob.svg" media="(max-width: 600px)">
-                            <img src="./img/page/steps-big.svg" alt="">
-                        </picture>-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--reviews" data-menu="reviews">
-        <div class="section-layer">
-          <div class="box-content">
-            <h2 class="box-content__title">Познакомься с будущими коллегами</h2>
-            <div class="swiper swiper_review">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="reviews-item">
+            <div class="reviews__slider reviews-slider swiper swiper_review">
+              <div class="swiper-container">
+                <div class="reviews-slider__wrapper swiper-wrapper">
+                  <div class="reviews-slider__item reviews-item swiper-slide">
                     <div class="reviews-item__person person">
                       <div class="person__pic">
                         <img
@@ -714,27 +742,29 @@
                         <div class="person__role">
                           Стажер направления по&nbsp;развитию бренда
                         </div>
+                        <div class="person__text">
+                          <p>
+                            Для меня стажировка в&nbsp;t2 стала сбывшейся
+                            мечтой. С&nbsp;2015 года я&nbsp;&mdash; лояльный
+                            абонент, поэтому стать частью t2 для меня означало
+                            многое. Здесь, будучи стажером, попадаешь
+                            в&nbsp;эпицентр событий и&nbsp;все время
+                            сталкиваешься с&nbsp;самыми разными задачами,
+                            которые точно нельзя назвать &laquo;рутиной&raquo;.
+                            В&nbsp;t2&nbsp;ты получаешь не&nbsp;только
+                            уникальный опыт, прокачивая свои hard и&nbsp;soft
+                            skills, но&nbsp;и&nbsp;можешь напрямую влиять
+                            на&nbsp;развитие компании, предлагая и&nbsp;реализуя
+                            свои идеи. И&nbsp;это бесценно!
+                          </p>
+                        </div>
+                        <p class="open-popup-modal link" data-popup="person-1">
+                          Читать полностью
+                        </p>
                       </div>
                     </div>
-                    <div class="reviews-item__text">
-                      <p>
-                        Для меня стажировка в&nbsp;t2 стала сбывшейся мечтой.
-                        С&nbsp;2015 года я&nbsp;&mdash; лояльный абонент,
-                        поэтому стать частью t2 для меня означало многое. Здесь,
-                        будучи стажером, попадаешь в&nbsp;эпицентр событий
-                        и&nbsp;все время сталкиваешься с&nbsp;самыми разными
-                        задачами, которые точно нельзя назвать
-                        &laquo;рутиной&raquo;. В&nbsp;t2&nbsp;ты получаешь
-                        не&nbsp;только уникальный опыт, прокачивая свои hard
-                        и&nbsp;soft skills, но&nbsp;и&nbsp;можешь напрямую
-                        влиять на&nbsp;развитие компании, предлагая
-                        и&nbsp;реализуя свои идеи. И&nbsp;это бесценно!
-                      </p>
-                    </div>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="reviews-item">
+                  <div class="reviews-slider__item reviews-item swiper-slide">
                     <div class="reviews-item__person person">
                       <div class="person__pic">
                         <img
@@ -747,309 +777,713 @@
                         <div class="person__role">
                           Руководитель направления по&nbsp;привлечению талантов
                         </div>
+                        <div class="person__text">
+                          <p>
+                            Стажировка&nbsp;&mdash; это возможность прикоснуться
+                            к&nbsp;настоящему бизнесу, поработать вместе
+                            с&nbsp;крутыми экспертами, применить знания
+                            на&nbsp;практике и&nbsp;остаться в&nbsp;команде
+                            в&nbsp;качестве сотрудника. Мы&nbsp;верим
+                            в&nbsp;потенциал начинающих специалистов,
+                            с&nbsp;радостью делимся опытом, поддерживаем,
+                            обучаем и&nbsp;плавно погружаем
+                            в&nbsp;бизнес-процессы.
+                          </p>
+                        </div>
+                        <p class="open-popup-modal link" data-popup="person-2">
+                          Читать полностью
+                        </p>
                       </div>
                     </div>
-                    <div class="reviews-item__text">
-                      <p>
-                        Стажировка&nbsp;&mdash; это возможность прикоснуться
-                        к&nbsp;настоящему бизнесу, поработать вместе
-                        с&nbsp;крутыми экспертами, применить знания
-                        на&nbsp;практике и&nbsp;остаться в&nbsp;команде
-                        в&nbsp;качестве сотрудника. Мы&nbsp;верим
-                        в&nbsp;потенциал начинающих специалистов,
-                        с&nbsp;радостью делимся опытом, поддерживаем, обучаем
-                        и&nbsp;плавно погружаем в&nbsp;бизнес-процессы.
-                      </p>
+                  </div>
+
+                  <div class="reviews-slider__item reviews-item swiper-slide">
+                    <div class="reviews-item">
+                      <div class="reviews-item__person person">
+                        <div class="person__pic">
+                          <img
+                            src="./img/page/person-3.jpg"
+                            alt=""
+                            class="userpic" />
+                        </div>
+                        <div class="person__desc">
+                          <div class="person__name">Перевозникова Лисана</div>
+                          <div class="person__role">
+                            Стажер дирекции по&nbsp;развитию корпоративной
+                            культуры, лидерства и&nbsp;обучения
+                          </div>
+                          <div class="person__text">
+                            <p>
+                              То, что мы&nbsp;с&nbsp;t2 подходим друг другу,
+                              я&nbsp;поняла уже на&nbsp;первом собеседовании.
+                              В&nbsp;команду искали пишущего человека,
+                              а&nbsp;тексты&nbsp;&mdash; моя главная любовь!
+                              На&nbsp;стажировке все оказалось даже лучше, чем
+                              я&nbsp;могла представить: с&nbsp;первого дня мягко
+                              включают в&nbsp;рабочий процесс, учат,
+                              но&nbsp;дают собственные зоны
+                              ответственности&nbsp;&mdash; ты&nbsp;занимаешься
+                              реальными задачами, принимаешь решения
+                              и&nbsp;общаешься со&nbsp;всеми на&nbsp;равных.
+                              Сейчас я&nbsp;чувствую себя уверенно
+                              в&nbsp;коллективе, постоянно учусь новому
+                              и&nbsp;занимаюсь любимым делом.
+                            </p>
+                          </div>
+                          <p
+                            class="open-popup-modal link"
+                            data-popup="person-2">
+                            Читать полностью
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-slider__item reviews-item swiper-slide">
+                    <div class="reviews-item">
+                      <div class="reviews-item__person person">
+                        <div class="person__pic">
+                          <img
+                            src="./img/page/person-4.jpg"
+                            alt=""
+                            class="userpic" />
+                        </div>
+                        <div class="person__desc">
+                          <div class="person__name">Редкова Вера</div>
+                          <div class="person__role">
+                            Руководитель направления по&nbsp;развитию бренда
+                          </div>
+                          <div class="person__text">
+                            <p>
+                              Стажировка&nbsp;&mdash; это выпавший шанс. Стажер
+                              обучается, но&nbsp;сразу &laquo;в&nbsp;бою&raquo;,
+                              видит процессы изнутри, участвует в&nbsp;реальных
+                              проектах компании и&nbsp;получает одновременно
+                              новые знания и&nbsp;опыт. Для наставника это
+                              не&nbsp;только рабочие руки,
+                              но&nbsp;и&nbsp;бесценная возможность получить
+                              свежий взгляд и&nbsp;креативные идеи. Стажировка
+                              в&nbsp;Теlе2&nbsp;&mdash; это та&nbsp;самая идея
+                              win-win в&nbsp;деле.
+                            </p>
+                          </div>
+                          <p
+                            class="open-popup-modal link"
+                            data-popup="person-4">
+                            Читать полностью
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-slider__item reviews-item swiper-slide">
+                    <div class="reviews-item">
+                      <div class="reviews-item__person person">
+                        <div class="person__pic">
+                          <img
+                            src="./img/page/person-5.jpg"
+                            alt=""
+                            class="userpic" />
+                        </div>
+                        <div class="person__desc">
+                          <div class="person__name">Киселев Максим</div>
+                          <div class="person__role">
+                            Руководитель направления операционной аналитики
+                          </div>
+                          <div class="person__text">
+                            <p>
+                              Прохождение стажировки в&nbsp;t2 дает студентам
+                              уникальную возможность получить ценный опыт работы
+                              в&nbsp;профессиональной среде, позволяющий
+                              применить и&nbsp;развить свои знания
+                              и&nbsp;навыки. Вы&nbsp;сможете установить ценные
+                              связи, расширить профессиональный кругозор
+                              и&nbsp;получить рекомендации. Это поможет вам
+                              на&nbsp;пути к&nbsp;построению успешной карьеры
+                              и&nbsp;улучшит перспективы дальнейшего
+                              трудоустройства. Не&nbsp;упустите возможность
+                              стать частью инновационной команды, работающей над
+                              развитием связи будущего.
+                            </p>
+                          </div>
+                          <p
+                            class="open-popup-modal link"
+                            data-popup="person-5">
+                            Читать полностью
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-slider__item reviews-item swiper-slide">
+                    <div class="reviews-item">
+                      <div class="reviews-item__person person">
+                        <div class="person__pic">
+                          <img
+                            src="./img/page/person-6.jpg"
+                            alt=""
+                            class="userpic" />
+                        </div>
+                        <div class="person__desc">
+                          <div class="person__name">Шальнева Кристина</div>
+                          <div class="person__role">
+                            Стажер департамента по&nbsp;работе с&nbsp;персоналом
+                            и&nbsp;операционному сервису
+                          </div>
+                          <div class="person__text">
+                            <p>
+                              Стажировка в&nbsp;t2&nbsp;&mdash; это прекрасный
+                              старт для карьеры. С&nbsp;первого дня тебя
+                              окружают поддержкой и&nbsp;вниманием, что особенно
+                              важно для начинающих специалистов.
+                              На&nbsp;стажировке растешь огромными шагами как
+                              личность и&nbsp;профессионал, совмещая работу
+                              с&nbsp;учебой и&nbsp;соблюдая work-life-balance.
+                              Большое спасибо t2, что дали возможность проявить
+                              себя, проникнуться культурой компании и&nbsp;стать
+                              круче, чем ты&nbsp;был вчера :)
+                            </p>
+                          </div>
+                          <p
+                            class="open-popup-modal link"
+                            data-popup="person-6">
+                            Читать полностью
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="swiper-slide">
-                  <div class="reviews-item">
-                    <div class="reviews-item__person person">
-                      <div class="person__pic">
-                        <img
-                          src="./img/page/person-3.jpg"
-                          alt=""
-                          class="userpic" />
-                      </div>
-                      <div class="person__desc">
-                        <div class="person__name">Перевозникова Лисана</div>
-                        <div class="person__role">
-                          Стажер дирекции по&nbsp;развитию корпоративной
-                          культуры, лидерства и&nbsp;обучения
-                        </div>
-                      </div>
-                    </div>
-                    <div class="reviews-item__text">
-                      <p>
-                        То, что мы&nbsp;с&nbsp;t2 подходим друг другу,
-                        я&nbsp;поняла уже на&nbsp;первом собеседовании.
-                        В&nbsp;команду искали пишущего человека,
-                        а&nbsp;тексты&nbsp;&mdash; моя главная любовь!
-                        На&nbsp;стажировке все оказалось даже лучше, чем
-                        я&nbsp;могла представить: с&nbsp;первого дня мягко
-                        включают в&nbsp;рабочий процесс, учат, но&nbsp;дают
-                        собственные зоны ответственности&nbsp;&mdash;
-                        ты&nbsp;занимаешься реальными задачами, принимаешь
-                        решения и&nbsp;общаешься со&nbsp;всеми на&nbsp;равных.
-                        Сейчас я&nbsp;чувствую себя уверенно в&nbsp;коллективе,
-                        постоянно учусь новому и&nbsp;занимаюсь любимым делом.
-                      </p>
-                    </div>
+                <div class="swiper-controls">
+                  <div class="swiper-button-prev">
+                    <svg width="100%" viewBox="0 0 9 14">
+                      <use xlink:href="#openup-arrow-white"></use>
+                    </svg>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="reviews-item">
-                    <div class="reviews-item__person person">
-                      <div class="person__pic">
-                        <img
-                          src="./img/page/person-4.jpg"
-                          alt=""
-                          class="userpic" />
-                      </div>
-                      <div class="person__desc">
-                        <div class="person__name">Редкова Вера</div>
-                        <div class="person__role">
-                          Руководитель направления по&nbsp;развитию бренда
-                        </div>
-                      </div>
-                    </div>
-                    <div class="reviews-item__text">
-                      <p>
-                        Стажировка&nbsp;&mdash; это выпавший шанс. Стажер
-                        обучается, но&nbsp;сразу &laquo;в&nbsp;бою&raquo;, видит
-                        процессы изнутри, участвует в&nbsp;реальных проектах
-                        компании и&nbsp;получает одновременно новые знания
-                        и&nbsp;опыт. Для наставника это не&nbsp;только рабочие
-                        руки, но&nbsp;и&nbsp;бесценная возможность получить
-                        свежий взгляд и&nbsp;креативные идеи. Стажировка
-                        в&nbsp;Теlе2&nbsp;&mdash; это та&nbsp;самая идея win-win
-                        в&nbsp;деле.
-                      </p>
-                    </div>
+                  <div class="swiper-button-next">
+                    <svg width="100%" viewBox="0 0 9 14">
+                      <use xlink:href="#openup-arrow-white"></use>
+                    </svg>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="reviews-item">
-                    <div class="reviews-item__person person">
-                      <div class="person__pic">
-                        <img
-                          src="./img/page/person-5.jpg"
-                          alt=""
-                          class="userpic" />
-                      </div>
-                      <div class="person__desc">
-                        <div class="person__name">Киселев Максим</div>
-                        <div class="person__role">
-                          Руководитель направления операционной аналитики
-                        </div>
-                      </div>
-                    </div>
-                    <div class="reviews-item__text">
-                      <p>
-                        Прохождение стажировки в&nbsp;t2 дает студентам
-                        уникальную возможность получить ценный опыт работы
-                        в&nbsp;профессиональной среде, позволяющий применить
-                        и&nbsp;развить свои знания и&nbsp;навыки.
-                        Вы&nbsp;сможете установить ценные связи, расширить
-                        профессиональный кругозор и&nbsp;получить рекомендации.
-                        Это поможет вам на&nbsp;пути к&nbsp;построению успешной
-                        карьеры и&nbsp;улучшит перспективы дальнейшего
-                        трудоустройства. Не&nbsp;упустите возможность стать
-                        частью инновационной команды, работающей над развитием
-                        связи будущего.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="reviews-item">
-                    <div class="reviews-item__person person">
-                      <div class="person__pic">
-                        <img
-                          src="./img/page/person-6.jpg"
-                          alt=""
-                          class="userpic" />
-                      </div>
-                      <div class="person__desc">
-                        <div class="person__name">Шальнева Кристина</div>
-                        <div class="person__role">
-                          Стажер департамента по&nbsp;работе с&nbsp;персоналом
-                          и&nbsp;операционному сервису
-                        </div>
-                      </div>
-                    </div>
-                    <div class="reviews-item__text">
-                      <p>
-                        Стажировка в&nbsp;t2&nbsp;&mdash; это прекрасный старт
-                        для карьеры. С&nbsp;первого дня тебя окружают поддержкой
-                        и&nbsp;вниманием, что особенно важно для начинающих
-                        специалистов. На&nbsp;стажировке растешь огромными
-                        шагами как личность и&nbsp;профессионал, совмещая работу
-                        с&nbsp;учебой и&nbsp;соблюдая work-life-balance. Большое
-                        спасибо t2, что дали возможность проявить себя,
-                        проникнуться культурой компании и&nbsp;стать круче, чем
-                        ты&nbsp;был вчера :)
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="swiper-slide">
-                  <div class="reviews-item">
-                    <div class="reviews-item__person person">
-                      <div class="person__pic">
-                        <img
-                          src="./img/page/testimonials-person-7.jpg"
-                          alt=""
-                          class="userpic"
-                        />
-                      </div>
-                      <div class="person__desc">
-                        <div class="person__name">Кирилл Елистратов</div>
-                        <div class="person__role">
-                          Старший менеджер по анализу больших данных<br />Наставник
-                        </div>
-                      </div>
-                    </div>
-                    <div class="reviews-item__text">
-                      <p>
-                        Стажировка дает возможности не&nbsp;только новым
-                        сотрудникам прокачать свои навыки и&nbsp;погрузиться
-                        в&nbsp;процессы реального бизнеса. Это еще
-                        и&nbsp;возможности для руководителя поработать
-                        с&nbsp;людьми разного уровня знаний. Подобная
-                        синергия&nbsp;&mdash; я&nbsp;уверен&nbsp;&mdash;
-                        позволит ребятам в&nbsp;дальнейшем скорректировать
-                        направление своего развития и&nbsp;плавнее погрузиться
-                        в&nbsp;рабочие ритмы рынка.
-                      </p>
-                    </div>
-                  </div>
-                </div> -->
-              </div>
-
-              <div class="swiper-pagination--review"></div>
-              <div class="swiper-controls">
-                <div class="swiper-button-prev"><span></span></div>
-                <div class="swiper-button-next"><span></span></div>
-              </div>
-            </div>
-          </div>
-          <div class="box-pic">
-            <div class="pic-layer">
-              <img src="./img/page/reviews-pic.svg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--faq">
-        <div class="section-layer">
-          <div class="box-content">
-            <h2 class="box-content--title">Собрали самые частые вопросы</h2>
-            <div class="box-pic">
-              <div class="pic-layer pic-layer-ask">
-                <img class="ask" src="./img/page/ask-pic.svg" alt="girl" />
-              </div>
-            </div>
-            <div class="faq">
-              <div class="faq__item">
-                <div class="faq__item--title">
-                  Могу&nbsp;ли я&nbsp;выбрать направление, отличное
-                  от&nbsp;того, на&nbsp;котором я&nbsp;учусь?
-                  <div class="faq__item--close"></div>
-                </div>
-                <div class="faq__item--text">
-                  Да, мoжно выбрать направление, которое нравится, главное,
-                  чтобы ты&nbsp;обладал необходимыми навыками для этой позиции.
-                </div>
-              </div>
-              <div class="faq__item">
-                <div class="faq__item--title">
-                  Могу&nbsp;ли я&nbsp;подать заявку более чем
-                  на&nbsp;1&nbsp;направление?
-                  <div class="faq__item--close"></div>
-                </div>
-                <div class="faq__item--text">
-                  Да, можно подать заявку на&nbsp;несколько направлений.
-                </div>
-              </div>
-              <div class="faq__item">
-                <div class="faq__item--title">
-                  Что делать, если нет направления, где я&nbsp;хотел&nbsp;бы
-                  стажироваться?
-                  <div class="faq__item--close"></div>
-                </div>
-                <div class="faq__item--text">
-                  Направление, в&nbsp;котором ты&nbsp;хотел&nbsp;бы пройти
-                  программу может появится в&nbsp;ближайшее время, следи
-                  за&nbsp;актуальными позициями на&nbsp;сайте t2&nbsp;<a
-                    href="https://tele2.ru/about/career/vacancies"
-                    class=""
-                    >в разделе Вакансии</a
-                  >
-                </div>
-              </div>
-              <div class="faq__item">
-                <div class="faq__item--title">
-                  Что делать, если я&nbsp;отправил заявку, но&nbsp;ответа
-                  не&nbsp;получил?
-                  <div class="faq__item--close"></div>
-                </div>
-                <div class="faq__item--text">
-                  Не&nbsp;переживай, мы&nbsp;обрабатываем все отклики&nbsp;и,
-                  если руководитель готов рассмотреть твою кандидатуру,
-                  мы&nbsp;свяжемся с&nbsp;тобой в&nbsp;ближайшее время.
-                </div>
-              </div>
-              <div class="faq__item">
-                <div class="faq__item--title">
-                  Если у&nbsp;меня не&nbsp;хватает навыков для выбранной
-                  позиции, что я&nbsp;могу сделать?
-                  <div class="faq__item--close"></div>
-                </div>
-                <div class="faq__item--text">
-                  Ты&nbsp;можешь рассмотреть другие позиции либо приобрести
-                  необходимые навыки и&nbsp;подать заявку.
-                </div>
-              </div>
-              <div class="faq__item">
-                <div class="faq__item--title">
-                  Как будет проходить моя стажировка в&nbsp;удаленном режиме?
-                  <div class="faq__item--close"></div>
-                </div>
-                <div class="faq__item--text">
-                  Мы&nbsp;работаем в&nbsp;гибридном графике, то&nbsp;есть
-                  ты&nbsp;можешь приезжать в&nbsp;офис по&nbsp;необходимости
-                  либо работать из&nbsp;дома по&nbsp;договоренности
-                  с&nbsp;руководителем.
-                </div>
-              </div>
-              <div class="faq__item">
-                <div class="faq__item--title">
-                  Какой уровень зарплаты на&nbsp;стажировке?
-                  <div class="faq__item--close"></div>
-                </div>
-                <div class="faq__item--text">
-                  Мы&nbsp;предлагаем конкурентоспособную зарплату, более
-                  детально мы&nbsp;обсудим это на&nbsp;интервью.
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section section--footer">
-        <div class="section-layer">
-          <div class="box-content">
+        <section class="section section-faq">
+          <div class="section-faq__container container">
+            <div class="container__inner faq openup-list">
+              <h3 class="faq__title">Собрали самые частые вопросы</h3>
+              <div class="faq__content">
+                <div class="faq__item item openup-list__item">
+                  <div class="item__header">
+                    <div
+                      class="item__title subtitle js-gtm-event"
+                      data-event="faq_get"
+                      data-section="section-faq">
+                      Могу&nbsp;ли я&nbsp;выбрать направление, отличное
+                      от&nbsp;того, на&nbsp;котором я&nbsp;учусь?
+                    </div>
+                    <div class="item__close-icon">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="item__text">
+                    <p class="small-text">
+                      Да, мoжно выбрать направление, которое нравится, главное,
+                      чтобы ты&nbsp;обладал необходимыми навыками для этой
+                      позиции.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq__item item openup-list__item">
+                  <div class="item__header">
+                    <div
+                      class="item__title subtitle js-gtm-event"
+                      data-event="faq_new-exchange-phones"
+                      data-section="section-faq">
+                      Могу&nbsp;ли я&nbsp;подать заявку более чем
+                      на&nbsp;1&nbsp;направление?
+                    </div>
+                    <div class="item__close-icon"><span></span></div>
+                  </div>
+                  <div class="item__text">
+                    <p class="small-text">
+                      Да, можно подать заявку на&nbsp;несколько направлений.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq__item item openup-list__item">
+                  <div class="item__header">
+                    <div
+                      class="item__title subtitle js-gtm-event"
+                      data-event="faq_promocode"
+                      data-section="section-faq">
+                      Что делать, если нет направления, где я&nbsp;хотел&nbsp;бы
+                      стажироваться?
+                    </div>
+                    <div class="item__close-icon">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="item__text">
+                    <p class="small-text">
+                      Направление, в&nbsp;котором ты&nbsp;хотел&nbsp;бы пройти
+                      программу может появится в&nbsp;ближайшее время, следи
+                      за&nbsp;актуальными позициями на&nbsp;сайте t2&nbsp;<a
+                        href="https://tele2.ru/about/career/vacancies"
+                        class=""
+                        >в разделе Вакансии</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="faq__item item openup-list__item">
+                  <div class="item__header">
+                    <div
+                      class="item__title subtitle js-gtm-event"
+                      data-event="faq_mixx"
+                      data-section="section-faq">
+                      Что делать, если я&nbsp;отправил заявку, но&nbsp;ответа
+                      не&nbsp;получил?
+                    </div>
+                    <div class="item__close-icon">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="item__text">
+                    <p class="small-text">
+                      Не&nbsp;переживай, мы&nbsp;обрабатываем все
+                      отклики&nbsp;и, если руководитель готов рассмотреть твою
+                      кандидатуру, мы&nbsp;свяжемся с&nbsp;тобой
+                      в&nbsp;ближайшее время.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq__item item openup-list__item">
+                  <div class="item__header">
+                    <div
+                      class="item__title subtitle js-gtm-event"
+                      data-event="faq_change"
+                      data-section="section-faq">
+                      Если у&nbsp;меня не&nbsp;хватает навыков для выбранной
+                      позиции, что я&nbsp;могу сделать?
+                    </div>
+                    <div class="item__close-icon">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="item__text">
+                    <p class="small-text">
+                      Ты&nbsp;можешь рассмотреть другие позиции либо приобрести
+                      необходимые навыки и&nbsp;подать заявку.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq__item item openup-list__item">
+                  <div class="item__header">
+                    <div
+                      class="item__title subtitle js-gtm-event"
+                      data-event="faq_rubles"
+                      data-section="section-faq">
+                      Как будет проходить моя стажировка в&nbsp;удаленном
+                      режиме?
+                    </div>
+                    <div class="item__close-icon">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="item__text">
+                    <p class="small-text">
+                      Мы&nbsp;работаем в&nbsp;гибридном графике, то&nbsp;есть
+                      ты&nbsp;можешь приезжать в&nbsp;офис по&nbsp;необходимости
+                      либо работать из&nbsp;дома по&nbsp;договоренности
+                      с&nbsp;руководителем.
+                    </p>
+                  </div>
+                </div>
+                <div class="faq__item item openup-list__item">
+                  <div class="item__header">
+                    <div
+                      class="item__title subtitle js-gtm-event"
+                      data-event="faq_who"
+                      data-section="section-faq">
+                      Какой уровень зарплаты на&nbsp;стажировке?
+                    </div>
+                    <div class="item__close-icon">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="item__text">
+                    <p class="small-text">
+                      Мы&nbsp;предлагаем конкурентоспособную зарплату, более
+                      детально мы&nbsp;обсудим это на&nbsp;интервью.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <footer class="section section-footer footer">
+        <div class="footer__container container">
+          <div class="footer__content">
             <div class="copyrights">
-              © t2 Россия, <span class="current-year"></span>.
+              18+ © T2 Россия, <span class="current-year"></span>.
             </div>
           </div>
         </div>
-      </section>
+      </footer>
+
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="tech">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Техническое управление</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              В&nbsp;рамках стажировки тебе необходимо будет работать
+              с&nbsp;технической документацией по&nbsp;оборудованию. Наряду
+              с&nbsp;этими задачами, ты&nbsp;попробуешь себя в&nbsp;роли
+              аналитика и&nbsp;тестировщика. Для успешного прохождения
+              стажировки тебе понадобятся знания в&nbsp;области телекома
+              о&nbsp;GSM, LTE и&nbsp;3G. Также необходимы будут базовые знания
+              SQL и&nbsp;начальные навыки программирования и&nbsp;работы
+              с&nbsp;Linux. Знания английского на&nbsp;уровне intermediate будут
+              плюсом.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="analytics">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Сетевая аналитика</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              С&nbsp;начала стажировки ты&nbsp;будешь участвовать
+              в&nbsp;проектах по контролю эксплуатации сетей сотовой связи
+              и&nbsp;автоматизировать процессы технического контроля. Одними
+              из&nbsp;твоих задач на стажировке будут сопровождение
+              и&nbsp;контроль работы подрядчиков, сопровождение реестра
+              локальной аренды каналов и&nbsp;проведение аудита данных
+              в&nbsp;системах по&nbsp;размещению сетей связи. Также ты займешься
+              оптимизацией затрат по&nbsp;размещению оборудования сетей связи.
+              Тебе будет интересно это направление, если ты&nbsp;понимаешь
+              принципы организации сетей мобильной сотовой связи и&nbsp;хорошо
+              владеешь MS&nbsp;Office (Excel, Word).
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="IT">
+          <div class="modal-box__header">
+            <div class="modal-box__title">ИТ</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              В&nbsp;зависимости от&nbsp;направления, задачей стажера будет
+              в&nbsp;боевых условиях получать знания работая над реальными
+              ИТ-проектами. Ты&nbsp;узнаешь о&nbsp;том как взаимодействуют
+              системы, научишься составлять чек-листы и&nbsp;сценарии для
+              последующей автоматизации тестов под функционал соответствующего
+              проекта, также получишь практические навыки анализа данных,
+              использования современных инструментов для работы с&nbsp;данными,
+              освоишь основы программирования и&nbsp;разработки. В&nbsp;рамках
+              выполнения задач ты&nbsp;будешь использовать современные языки
+              программирования и&nbsp;технологические стеки, поэтому для
+              успешного прохождения стажировки тебе помогут базовые знания SQL,
+              JavaScript, C#, Python и&nbsp;других инструментов, исходя
+              из&nbsp;направления внутри&nbsp;ИТ.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="hr">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Управление персоналом</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              С&nbsp;первых дней стажировки ты&nbsp;будешь &laquo;вести
+              кандидатов&raquo;&nbsp;&mdash; от&nbsp;заявки до&nbsp;выхода
+              нового сотрудника на&nbsp;работу. Также ты&nbsp;будешь принимать
+              участие в&nbsp;проектах по&nbsp;организации и&nbsp;проведению
+              мероприятий по&nbsp;обучению и&nbsp;развитию сотрудников компании.
+              В&nbsp;рамках стажировки ты&nbsp;сможешь применить свои знания
+              и&nbsp;навыки для создания внутренних коммуникаций для
+              информирования сотрудников макрорегиона. Для успешного прохождения
+              стажировки тебе потребуется понимание трудового
+              законодательства&nbsp;РФ, уверенное знание MS&nbsp;Office
+              (MS&nbsp;Excel, PowerPoint), базовые навыки работы
+              с&nbsp;графическими редакторами.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="finances">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Финансы и аудит</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              Твоя стажировка будет наполнена различными задачами, в&nbsp;том
+              числе&nbsp;ты будешь много работать с&nbsp;учетной системой для
+              сверки данных. На&nbsp;стажировке ты&nbsp;попробуешь анализировать
+              accruals и&nbsp;показатели эффективности направления продаж,
+              займешься расчетами окупаемости авансирования. Также
+              ты&nbsp;будешь поддерживать бюджетные процессы компании
+              и&nbsp;поучаствуешь в&nbsp;подготовке финансовой отчетности. Для
+              прохождения стажировки тебе потребуются основы экономической
+              теории и&nbsp;понимание бухгалтерских проводок. Также необходимо
+              уверенное владение MS&nbsp;Excel и языком VBA, для реализации
+              поставленных задач.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="sales">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Продажи</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              С&nbsp;первых дней стажировки ты&nbsp;будешь задействован
+              в&nbsp;проектах по&nbsp;расчету бизнес-кейсов для открытия новых
+              салонов связи. Также в&nbsp;твои задачи будет входить первичная
+              аналитика отчетности по&nbsp;текущим партнерам компании.
+              Стажировка в&nbsp;продажах&nbsp;&mdash; постоянная работа
+              с&nbsp;документами и&nbsp;документооборотом, а&nbsp;также сбор
+              и&nbsp;аналитика больших объемов данных. Для выполнения задач
+              стажировки тебе потребуется уверенное владение Excel и&nbsp;навыки
+              работы с&nbsp;большими массивами данных.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="marketing">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Маркетинг и PR</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              С&nbsp;первого дня стажировки ты&nbsp;будешь напрямую
+              взаимодействовать с&nbsp;действующими корпоративными клиентами
+              по&nbsp;проводимым маркетинговым проектам. Ты&nbsp;будешь вести
+              документооборот с&nbsp;клиентами, собирать и&nbsp;анализировать
+              отчетность по&nbsp;проектам. Также тебе необходимо будет
+              заниматься мониторингом best practices для контент-маркетинга.
+              Чтобы успешно справиться с&nbsp;задачами стажировки, тебе
+              потребуются навыки копирайтинга и&nbsp;рерайтинга, знание
+              MS&nbsp;Office (PowerPoint, Word, Excel), знание основ
+              контент-маркетинга и&nbsp;знания инструментов позиционирования
+              и&nbsp;работы с&nbsp;брендом.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="person-1">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Стоянова Екатерина</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              Для меня стажировка в&nbsp;t2 стала сбывшейся мечтой. С&nbsp;2015
+              года я&nbsp;&mdash; лояльный абонент, поэтому стать частью t2 для
+              меня означало многое. Здесь, будучи стажером, попадаешь
+              в&nbsp;эпицентр событий и&nbsp;все время сталкиваешься
+              с&nbsp;самыми разными задачами, которые точно нельзя назвать
+              &laquo;рутиной&raquo;. В&nbsp;t2&nbsp;ты получаешь не&nbsp;только
+              уникальный опыт, прокачивая свои hard и&nbsp;soft skills,
+              но&nbsp;и&nbsp;можешь напрямую влиять на&nbsp;развитие компании,
+              предлагая и&nbsp;реализуя свои идеи. И&nbsp;это бесценно!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="person-2">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Чижова Лилиана</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              Стажировка&nbsp;&mdash; это возможность прикоснуться
+              к&nbsp;настоящему бизнесу, поработать вместе с&nbsp;крутыми
+              экспертами, применить знания на&nbsp;практике и&nbsp;остаться
+              в&nbsp;команде в&nbsp;качестве сотрудника. Мы&nbsp;верим
+              в&nbsp;потенциал начинающих специалистов, с&nbsp;радостью делимся
+              опытом, поддерживаем, обучаем и&nbsp;плавно погружаем
+              в&nbsp;бизнес-процессы.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="person-3">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Перевозникова Лисана</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              То, что мы&nbsp;с&nbsp;t2 подходим друг другу, я&nbsp;поняла уже
+              на&nbsp;первом собеседовании. В&nbsp;команду искали пишущего
+              человека, а&nbsp;тексты&nbsp;&mdash; моя главная любовь!
+              На&nbsp;стажировке все оказалось даже лучше, чем я&nbsp;могла
+              представить: с&nbsp;первого дня мягко включают в&nbsp;рабочий
+              процесс, учат, но&nbsp;дают собственные зоны
+              ответственности&nbsp;&mdash; ты&nbsp;занимаешься реальными
+              задачами, принимаешь решения и&nbsp;общаешься со&nbsp;всеми
+              на&nbsp;равных. Сейчас я&nbsp;чувствую себя уверенно
+              в&nbsp;коллективе, постоянно учусь новому и&nbsp;занимаюсь любимым
+              делом.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="person-4">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Редкова Вера</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              Стажировка&nbsp;&mdash; это выпавший шанс. Стажер обучается,
+              но&nbsp;сразу &laquo;в&nbsp;бою&raquo;, видит процессы изнутри,
+              участвует в&nbsp;реальных проектах компании и&nbsp;получает
+              одновременно новые знания и&nbsp;опыт. Для наставника это
+              не&nbsp;только рабочие руки, но&nbsp;и&nbsp;бесценная возможность
+              получить свежий взгляд и&nbsp;креативные идеи. Стажировка
+              в&nbsp;Теlе2&nbsp;&mdash; это та&nbsp;самая идея win-win
+              в&nbsp;деле.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="person-5">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Киселев Максим</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              Прохождение стажировки в&nbsp;t2 дает студентам уникальную
+              возможность получить ценный опыт работы в&nbsp;профессиональной
+              среде, позволяющий применить и&nbsp;развить свои знания
+              и&nbsp;навыки. Вы&nbsp;сможете установить ценные связи, расширить
+              профессиональный кругозор и&nbsp;получить рекомендации. Это
+              поможет вам на&nbsp;пути к&nbsp;построению успешной карьеры
+              и&nbsp;улучшит перспективы дальнейшего трудоустройства.
+              Не&nbsp;упустите возможность стать частью инновационной команды,
+              работающей над развитием связи будущего.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-modal popup-modal-hidden">
+        <div class="modal-box" id="person-6">
+          <div class="modal-box__header">
+            <div class="modal-box__title">Шальнева Кристина</div>
+            <div class="close">
+              <svg viewBox="0 0 24 24" width="100%">
+                <use xlink:href="#close"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-box__body">
+            <div class="modal-box__text">
+              Стажировка в&nbsp;t2&nbsp;&mdash; это прекрасный старт для
+              карьеры. С&nbsp;первого дня тебя окружают поддержкой
+              и&nbsp;вниманием, что особенно важно для начинающих специалистов.
+              На&nbsp;стажировке растешь огромными шагами как личность
+              и&nbsp;профессионал, совмещая работу с&nbsp;учебой и&nbsp;соблюдая
+              work-life-balance. Большое спасибо t2, что дали возможность
+              проявить себя, проникнуться культурой компании и&nbsp;стать круче,
+              чем ты&nbsp;был вчера :)
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./js/main.js" type="module"></script>
