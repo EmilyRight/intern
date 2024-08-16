@@ -1,4 +1,4 @@
-import { openModal } from './modal';
+import { openMenu, openModal } from './modal';
 import { WOW } from './vendor/wow.min';
 import Swiper from './vendor/swiper.min';
 
@@ -6,20 +6,14 @@ const wow = new WOW();
 
 document.addEventListener('DOMContentLoaded', () => {
   wow.init();
-  openMenu();
+  setEventListeners();
   handleFaqOpening();
   openPopup();
   handleSlider();
+  getCurrentYear();
+  scrollTeaser();
 });
 
-function openMenu() {
-  const burgerIcon = document.querySelector('.burger-icon');
-  const navMenu = document.querySelector('.header-nav');
-  burgerIcon.addEventListener('click', () => {
-    navMenu.classList.toggle('_opened');
-    burgerIcon.classList.toggle('_opened');
-  });
-}
 
 function setActive(arr) {
   const activeClassName = 'active';
@@ -79,3 +73,51 @@ function handleSlider() {
   });
   swiper.init();
 }
+
+function getCurrentYear() {
+  const yearSpan = document.querySelectorAll('.current-year');
+  yearSpan.forEach((span) => {
+    span.innerHTML = new Date().getFullYear().toString();
+  });
+}
+function scrollToElement(el, header) {
+  const offs = 0;
+  const headerHeight = header || 0;
+  const y = el.getBoundingClientRect().top + window.scrollY + offs - headerHeight;
+  window.scrollTo({ top: y, behavior: 'smooth' }); // element.scrollIntoView();
+}
+
+// scroll to next if URL contains #about
+
+function scrollTeaser() {
+  const { hash } = window.location;
+  if (hash) {
+    const id = hash.slice(1);
+    const section = document.getElementById(id);
+    scrollToElement(section);
+  }
+}
+
+function handleMenu(event) {
+  const { section } = event.currentTarget.dataset;
+  const sectionsList = document.querySelectorAll('.section');
+  const burgerIcon = document.querySelector('.burger-icon');
+  const header = document.querySelector('.header');
+  const y = header.getBoundingClientRect().bottom;
+  sectionsList.forEach((item) => {
+    if (item.id === section) {
+      scrollToElement(item, y);
+      openMenu(burgerIcon);
+    }
+  });
+}
+
+function setEventListeners() {
+  const menuItems = document.querySelectorAll('.menu__item');
+  const burgerIcon = document.querySelector('.burger-icon');
+  menuItems.forEach((item) => {
+    item.addEventListener('click', (e) => handleMenu(e));
+  });
+  burgerIcon.addEventListener('click', () => openMenu(burgerIcon));
+}
+
