@@ -15,21 +15,6 @@
     }
   }
 
-  &__slider {
-  }
-  .container {
-  }
-  .reviews-slider {
-    &__wrapper {
-    }
-
-    &__item {
-    }
-  }
-  .swiper {
-    &_review {
-    }
-  }
   .swiper-container {
     margin-left: -1.8rem;
     padding-left: 1.8rem;
@@ -41,28 +26,18 @@
       margin-right: -15%;
     }
   }
-  .swiper-wrapper {
-  }
-  .reviews-item {
-    &__person {
-    }
-  }
-  .swiper-slide {
-  }
+
   .person {
     overflow: hidden;
     &__pic {
       border-radius: 1.6rem;
       overflow: hidden;
       width: 100%;
-      height: 50vw;
+
       margin-bottom: 1.2rem;
       img {
         width: 100%;
         display: block;
-      }
-      @media (min-width: $mobile-small) {
-        height: 26rem;
       }
     }
 
@@ -70,11 +45,15 @@
       padding: 2.4rem;
       background-color: #fff;
       border-radius: 1.6rem;
+      @media (min-width: $mobile-small) {
+        min-height: 28rem;
+      }
     }
 
     &__name {
       @include section-title-reviews;
       margin-bottom: 0.5rem;
+      min-height: 3rem;
     }
 
     &__role {

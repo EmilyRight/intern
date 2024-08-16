@@ -116,25 +116,67 @@
               class="logo js-gtm-event"
               data-event="logo"
               data-section="teaser">
-              <picture>
-                <source
-                  srcset="./img/logo-white.svg"
-                  media="(min-width: 600px)" />
-                <img src="./img/logo.svg" alt="" />
-              </picture>
+              <img src="./img/logo-white.svg" alt="" />
             </a>
           </div>
           <div class="header__nav header-nav">
             <ul class="header-nav__menu menu">
-              <li class="menu__item" data-section="about">О стажировке</li>
-              <li class="menu__item" data-section="stages">Этапы</li>
-              <li class="menu__item" data-section="program">Программа</li>
-              <li class="menu__item" data-section="what-next">Что потом</li>
-              <li class="menu__item" data-section="frame">Условия</li>
-              <li class="menu__item" data-section="specialization">
-                Направления
+              <li class="menu__item" data-section="aboutInternship">
+                <span class="text"> О стажировке </span>
+                <span class="icon">
+                  <svg viewBox="0 0 22 11" width="100%">
+                    <use xlink:href="#openup-arrow"></use>
+                  </svg>
+                </span>
               </li>
-              <li class="menu__item" data-section="reviews">Отзывы</li>
+              <li class="menu__item" data-section="stages">
+                <span class="text">Этапы</span>
+                <span class="icon">
+                  <svg viewBox="0 0 22 11" width="100%">
+                    <use xlink:href="#openup-arrow"></use>
+                  </svg>
+                </span>
+              </li>
+              <li class="menu__item" data-section="program">
+                <span class="text">Программа</span>
+                <span class="icon">
+                  <svg viewBox="0 0 22 11" width="100%">
+                    <use xlink:href="#openup-arrow"></use>
+                  </svg>
+                </span>
+              </li>
+              <li class="menu__item" data-section="whats-next">
+                <span class="text">Что потом</span>
+                <span class="icon">
+                  <svg viewBox="0 0 22 11" width="100%">
+                    <use xlink:href="#openup-arrow"></use>
+                  </svg>
+                </span>
+              </li>
+              <li class="menu__item" data-section="frame">
+                <span class="text">Условия</span>
+                <span class="icon">
+                  <svg viewBox="0 0 22 11" width="100%">
+                    <use xlink:href="#openup-arrow"></use>
+                  </svg>
+                </span>
+              </li>
+              <li class="menu__item" data-section="specialization">
+                <span class="text"> Направления</span>
+                <span class="icon">
+                  <svg viewBox="0 0 22 11" width="100%">
+                    <use xlink:href="#openup-arrow"></use>
+                  </svg>
+                </span>
+              </li>
+              <li class="menu__item" data-section="reviews">
+                <span class="text"> Отзывы</span>
+                <span class="icon">
+                  <svg viewBox="0 0 22 11" width="100%">
+                    <use xlink:href="#openup-arrow"></use>
+                  </svg>
+                </span>
+              </li>
             </ul>
           </div>
           <div class="header-nav__icon burger-icon"><span></span></div>
@@ -182,7 +224,7 @@
             </div>
           </div>
         </section>
-        <section class="section section-join join" data-menu="join">
+        <section class="section section-join join" id="about">
           <div class="container">
             <div class="join__content join-content">
               <h2 class="join-content__title">
@@ -212,7 +254,7 @@
             </div>
           </div>
         </section>
-        <section class="section section-about about" data-menu="about">
+        <section class="section section-about about" id="aboutInternship">
           <div class="about__container container">
             <div class="about__content about-content">
               <h2 class="about-content__title">Что тебя ждет</h2>
@@ -267,7 +309,7 @@
             </div>
           </div>
         </section>
-        <section class="section section-qualities qualities" data-menu="frame">
+        <section class="section section-qualities qualities" id="frame">
           <div class="qualities__container container">
             <div class="qualities__content qualities-content">
               <h2 class="qualities-content__title">
@@ -323,7 +365,7 @@
             </div>
           </div>
         </section>
-        <section class="section section-stages stages" data-menu="stages">
+        <section class="section section-stages stages" id="stages">
           <div class="stages__container container">
             <div class="stages__content stages-content">
               <h2 class="stages-content__title">
@@ -365,7 +407,7 @@
             </div>
           </div>
         </section>
-        <section class="section section-program program" data-menu="">
+        <section class="section section-program program" id="program">
           <div class="program__container container">
             <div class="program__content program-content">
               <div class="program-content__item program-text">
@@ -423,7 +465,7 @@
             </div>
           </div>
         </section>
-        <section class="section section-offer offer">
+        <section class="section section-offer offer" id="whats-next">
           <div class="offer__container container">
             <h2 class="offer__title offer__title_desktop">
               В&nbsp;конце пути&nbsp;&mdash; предложение постоянной работы
@@ -509,7 +551,7 @@
         </section>
         <section
           class="section section__specialization specialization"
-          data-menu="specialization">
+          id="specialization">
           <div class="specialization__container container">
             <h2 class="specialization__title">Есть из&nbsp;чего выбрать</h2>
             <div class="specialization__grid-cards openup-list">
@@ -722,7 +764,7 @@
             >
           </div>
         </section>
-        <section class="section section-reviews reviews" data-menu="reviews">
+        <section class="section section-reviews reviews" id="reviews">
           <div class="reviews__container container">
             <h2 class="reviews__title">Познакомься с будущими коллегами</h2>
 
