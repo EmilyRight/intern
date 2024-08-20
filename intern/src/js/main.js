@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   scrollTeaser();
 });
 
-
 function setActive(arr) {
   const activeClassName = 'active';
   arr.forEach((el) => {
@@ -99,6 +98,8 @@ function scrollTeaser() {
 }
 
 function handleMenu(event) {
+  const noscroll = 'modal-box-viewed';
+  const { body } = document;
   const { section } = event.currentTarget.dataset;
   const sectionsList = document.querySelectorAll('.section');
   const burgerIcon = document.querySelector('.burger-icon');
@@ -108,6 +109,7 @@ function handleMenu(event) {
     if (item.id === section) {
       scrollToElement(item, y);
       openMenu(burgerIcon);
+      body.classList.remove(noscroll);
     }
   });
 }
@@ -120,4 +122,3 @@ function setEventListeners() {
   });
   burgerIcon.addEventListener('click', () => openMenu(burgerIcon));
 }
-

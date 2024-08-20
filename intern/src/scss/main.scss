@@ -1,9 +1,9 @@
-@import "vars";
-@import "fonts2";
-@import "typo";
+@import "./vars";
+@import "./fonts";
+@import "./typo";
 
-@import "mixins";
-@import "base/base-reset";
+@import "./mixins";
+@import "./base/base-reset";
 
 html {
   min-height: 100%;
@@ -32,9 +32,9 @@ body {
   @media (min-width: $mobile-small) {
     background-color: $color-black;
   }
-  &.noscroll {
+  &.noscroll,
+  &.modal-box-viewed {
     overflow: hidden !important;
-    padding-right: 21px;
   }
 
   .page {
