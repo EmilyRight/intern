@@ -1,8 +1,8 @@
 const hidden = 'popup-modal-hidden';
 const active = 'modal-box-active';
 const noscroll = 'modal-box-viewed';
-const closeIconClassName = 'close';
 const { body } = document;
+const closeIconClassName = 'close';
 
 export function openModal(modalBoxId) {
   const modalBox = document.querySelector(modalBoxId);
@@ -44,5 +44,5 @@ export function openMenu(icon) {
   const navMenu = document.querySelector('.header-nav');
   navMenu.classList.toggle('_opened');
   icon.classList.toggle('_opened');
-  body.classList.toggle(noscroll);
+  body.classList.add(noscroll);
 }
