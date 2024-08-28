@@ -44,5 +44,6 @@ export function openMenu(icon) {
   const navMenu = document.querySelector('.header-nav');
   navMenu.classList.toggle('_opened');
   icon.classList.toggle('_opened');
+  body.style.paddingRight = '0px';
   body.classList.add(noscroll);
 }
