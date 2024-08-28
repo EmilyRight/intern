@@ -69,8 +69,10 @@ function handleSlider() {
         slidesPerView: 3,
       },
     },
+
   });
   swiper.init();
+  swiper.on('activeIndexChange', openPopup);
 }
 
 function getCurrentYear() {
