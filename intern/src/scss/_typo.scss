@@ -51,10 +51,15 @@ h4 {
     text-decoration: none;
   }
 }
+.lowercase {
+  text-transform: lowercase;
+}
+
 .subtitle {
   font-size: 2.2rem;
   line-height: 2.8rem;
 }
+
 p {
   font-family: $font1;
   a {
