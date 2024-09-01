@@ -75,7 +75,7 @@
     @media (min-width: $mobile-small) {
       width: 56%;
       border-radius: 3.2rem;
-      padding: 1.2rem 2.4rem 1.5rem 2.05rem;
+      padding: 2.4rem;
       display: flex;
       flex-direction: column;
     }
@@ -135,6 +135,7 @@
       margin-top: auto;
       padding: 1.6rem 1.5rem;
       max-width: fit-content;
+      border-radius: 1.6rem;
     }
   }
 }
