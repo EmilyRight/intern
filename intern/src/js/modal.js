@@ -45,5 +45,5 @@ export function openMenu(icon) {
   navMenu.classList.toggle('_opened');
   icon.classList.toggle('_opened');
   body.style.paddingRight = '0px';
-  body.classList.add(noscroll);
+  body.classList.toggle(noscroll);
 }
