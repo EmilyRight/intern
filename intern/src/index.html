@@ -49,19 +49,6 @@
     <meta
       name="twitter:image"
       content="https://intern.t2.ru/src/img/preview-og.jpg" />
-    <script>
-      dataLayer = [{ pageType: "Main", userId: "24487464" }];
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        let f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-MGCDQX3");
-    </script>
   </head>
   <body>
     <div>
@@ -1087,7 +1074,7 @@
         <div class="footer__container container">
           <div class="footer__content">
             <div class="copyrights">
-              18+ © T2 Россия, <span class="current-year"></span>.
+              18+ © t2 Россия, <span class="current-year"></span>.
             </div>
           </div>
         </div>
@@ -1448,6 +1435,19 @@
         });
       }
       setCurrentYear();
+    </script>
+    <script>
+      dataLayer = [{ pageType: "Main", userId: "24487464" }];
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        let f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MGCDQX3");
     </script>
   </body>
 </html>
